@@ -16,14 +16,14 @@ timezone:
 
 title: bramilch # the main title
 
-tagline: Data-driven Business Intelligence and Problem solving # it will display as the sub-title
+tagline: Data Science, Business Analytics & Intelligence, Computer Science, AI, Mathematics, Statistics # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Technical writing for Data Science, Computer Science, Business Intelligence
+  Technical writing for Data Science, Computer Science, Business Intelligence, AI, Mathematics, Statistics
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: 'https://bramilch.github.io/'
+url: 'https://bramilch.github.io'
 
 github:
   username: bramilch # change to your github username
@@ -35,22 +35,22 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: bramilch
-  email: example@domain.com # change to your email address
+  email: bramilch5248@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    - https://twitter.com/bramilch # change to your twitter homepage
+    - https://github.com/bramilch # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: 'I6h8HwCnvTFhwWDx-S7-xlHGWjtcf-rWCKMaRDc7Luo' # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: 'G-N3SPFE1TWD' # fill in your Google Analytics ID
 
 goatcounter:
   id: # fill in your Goatcounter ID
