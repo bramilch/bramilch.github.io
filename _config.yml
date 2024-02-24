@@ -148,7 +148,7 @@ collections:
 
 defaults:
   - scope: 
-      path: assets/img/favicons # "" # An empty string here means all files in the project
+      path: "" # An empty string here means all files in the project
       type: posts
     values:
       layout: post
