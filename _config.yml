@@ -19,7 +19,7 @@ title: bramilch # the main title
 tagline: Data Science, Business Analytics & Intelligence, Computer Science, AI, Mathematics, Statistics # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Technical writing for Data Science, Computer Science, Business Intelligence, AI, Mathematics, Statistics
+  Technical writing for Data Science, Business Analytics & Intelligence, Computer Science, AI, Mathematics, Statistics
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -44,7 +44,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: 'I6h8HwCnvTFhwWDx-S7-xlHGWjtcf-rWCKMaRDc7Luo' # fill in to your verification string
+google_site_verification: 'google-site-verification=I6h8HwCnvTFhwWDx-S7-xlHGWjtcf-rWCKMaRDc7Luo' # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
