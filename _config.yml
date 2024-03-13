@@ -8,8 +8,15 @@ theme: jekyll-theme-chirpy
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
 
+# plugins:
+#   - jekyll-polyglot
+# languages: ["ko", "en"]
+# default_lang: "ko"
+# exclude_from_localization: ["javascript", "images", "css", "public"]
+# parallel_localization: false
+
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -73,7 +80,7 @@ theme_mode: dark # [light | dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: 
+img_cdn: 'https://bramilch.github.io'
 
 # the avatar on sidebar, support local or CORS resources
 avatar: 'https://avatars.githubusercontent.com/u/65772937?v=4'
@@ -82,7 +89,7 @@ avatar: 'https://avatars.githubusercontent.com/u/65772937?v=4'
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
 
-# boolean type, the global switch for TOC in posts.
+# boolean type, the global switch for TOC in posts. Table of Contents
 toc: true
 
 comments:
