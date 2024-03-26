@@ -23,10 +23,10 @@ timezone: Asia/Seoul
 
 title: bramilch # the main title
 
-tagline: Data Science, Business Analytics & Intelligence, Computer Science, AI, Mathematics, Statistics # it will display as the sub-title
+tagline: Data Science, AI, Business Analytics & Intelligence, Computer Science, Mathematics, Statistics # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Technical writing for Data Science, Business Analytics & Intelligence, Computer Science, AI, Mathematics, Statistics
+  Technical writing for Data Science, AI, Business Analytics & Intelligence, Computer Science, Mathematics, Statistics
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.

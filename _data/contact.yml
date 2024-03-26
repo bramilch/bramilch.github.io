@@ -2,17 +2,24 @@
 
 - type: github
   icon: "fab fa-github"
+  url:  'https://github.com/bramilch'
 
-- type: twitter
+- type: notion
+  icon: "fa-regular fa-address-book"
+  url:  'https://www.notion.so/bramilch/bramilch-s-Portfolio-e113abbb507741ff8289e35c554bd587?pvs=4'
+
+- type: X
   icon: "fa-brands fa-x-twitter"
+  url:  'https://twitter.com/bramilch' 
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+# - type: email
+#   icon: "fas fa-envelope"
+#   noblank: false # If ture, open link in current tab
+#   url:  'bramilch5248@gmail.com' 
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: false
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
