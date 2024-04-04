@@ -2,7 +2,7 @@
 layout: post
 title: 리액트 React Virtual DOM 개념과 동작방식 feat. 원티드 프리온보딩 챌린지 4월
 author: bramilch
-date: 2024-04-02 18:00:00 +0900
+date: 2024-04-04 18:00:00 +0900
 categories: [Frontend, Web Development]
 tags: [Frontend, Web Development]
 pin: true
@@ -41,9 +41,7 @@ mermaid:
 
 - 원티드 프리온보딩 챌린지 4월 프론트엔드 FE의 사전과제를 작성하며 정리한 내용을 작성함.
 
-  <details>
-  <summary> 원티드 프리온보딩 챌린지란 </summary>
-  <div markdown="1"><br/>
+  <details><summary> 원티드 프리온보딩 챌린지란 </summary><div markdown="1">
     
     - 총 5가지 프로그램이 진행됨.
 
@@ -72,11 +70,9 @@ mermaid:
   </div>
   </details><br/>
 
-  <details>
-  <summary> 프론트엔드 챌린지 4월 내용 </summary>
-  <div markdown="1"><br/>
+  <details><summary> 프론트엔드 챌린지 4월 내용 </summary><div markdown="1">
 
-  [ 실무에서 바로 적용 가능한 리액트 핵심 기술 | 프리온보딩 FE 챌린지 4월](https://www.wanted.co.kr/events/pre_challenge_fe_20)
+  [실무에서 바로 적용 가능한 리액트 핵심 기술 | 프리온보딩 FE 챌린지 4월](https://www.wanted.co.kr/events/pre_challenge_fe_20)
 
   아래의 내용은 위 링크의 내용을 그대로 참고하였습니다.
 
@@ -85,11 +81,9 @@ mermaid:
     1. 프로젝트 초기, 기획안과 UI를 기반으로 체계적인 컴포넌트 분리와 파일 구조 작성 전략 학습
     2. 필수적이고 즉시 활용 가능한 리액트 개념을 빠르고 간단하게 학습
     3. 리액트스러운 효율적이고 표준적인 코드 작성법 학습
-    4. 면접에서 리액트의 표준 코드 작성법과 프론트엔드 시각으로 기획안 및 UI/UX를 체계적으로 구조화하는 지식에 대해 답할 수 있도록 학습
+    4. 면접에서 리액트의 표준 코드 작성법과 프론트엔드 시각으로 기획안 및 UI/UX를 체계적으로 구조화하는 지식에 대해 답할 수 있도록 학습<br/>
 
-    <details>
-    <summary> 커리큘럼 </summary>
-    <div markdown="1"><br/>
+    <details><summary> 커리큘럼 </summary><div markdown="1"><br/>
       
       - Week 1-1
         리액트의 핵심 원리를 소개합니다.
@@ -142,9 +136,8 @@ mermaid:
 
 <br/>
 
-  <details>
-    <summary> 원티드 회사 사업 내용과 프리온보딩 챌린지 사업 리서치 </summary>
-    <div markdown="1">
+<details><summary> 원티드 회사 사업 내용과 프리온보딩 챌린지 사업 리서치 </summary>
+<div markdown="1"><br/>
 
 - 원티드는 B2C 구인/구직/이직 매칭 사업, B2B HR 솔루션 사업, 커리어/HR 연관 사업(교육/콘텐츠/이벤트/코칭/네트워킹)이 주이고, 기업 리뷰 플랫폼 사업과 프리랜서 매칭/아웃소싱 플랫폼 사업으로 확장하려는 것으로 보임.
 
@@ -152,44 +145,36 @@ mermaid:
 
 - HR과 관련한 다양한 솔루션을 제공하고 있는데, 채용 솔루션('원티드 채용 솔루션'), HR 업무 솔루션(원티드 스페이스), 프리랜서 매칭 솔루션(원티드 긱스), 기업 리뷰 플랫폼인 원티드 인사이트와 연계하여 연봉, 인원, 매출, 전·현직자 리뷰 등을 관리할 수 있게 해주는 솔루션(원티드 인사이트)가 있음.
 
-- 최근 구인/구직/커리어 교육 기업들의 수강생과 수료생, 교육 프로그램 관리를 위한 B2B/B2G 솔루션 원티드 취업지원시스템을 런칭한 것으로 보임. 현재는 주로 취준생을 타겟팅한 구직 직무 교육기업/기관들에게 큰 돈줄이 되고 있는 고용노동부의 '국민내일배움카드' 사업에서의 교육 수강생들의 구직 활동, 취업 성과까지 관리할 수 있게 하여 구직 직무 교육기업/기관들의
-  연계 위한 솔루션으로 보이나 현직, 이직러들을 타겟팅한 커리어/직무 교육기업 패스트캠퍼스와 같은 비즈니스 모델도 염두에 두는 것으로 보임.
+- 최근 구인/구직/커리어 교육 기업들의 수강생과 수료생, 교육 프로그램 관리를 위한 B2B/B2G 솔루션 원티드 취업지원시스템을 런칭한 것으로 보임. 현재는 주로 취준생을 타겟팅한 구직 직무 교육기업/기관들에게 큰 돈줄이 되고 있는 고용노동부의 '국민내일배움카드' 사업에서의 교육 수강생들의 구직 활동, 취업 성과까지 관리할 수 있게 하여 구직 직무 교육기업/기관들의 연계 위한 솔루션으로 보이나 현직, 이직러들을 타겟팅한 커리어/직무 교육기업 패스트캠퍼스와 같은 비즈니스 모델도 염두에 두는 것으로 보임.
 
-  </div>
-  </details>
+</div>
+</details><br/>
 
-<br/>
-
-  <details>
-    <summary> 온보딩(Onboarding)과 프리온보딩(Pre-Onboarding)의 차이 </summary>
-    <div markdown="1"><br/>
-    
-  - 인사조직관리 분야에서 온보딩(Onboarding)은 조직사회화(Organizational Socialization)라고도 함.
+<details><summary> 온보딩(Onboarding)과 프리온보딩(Pre-Onboarding)의 차이 </summary>
+<div markdown="1"><br/>
+  
+- 인사조직관리 분야에서 온보딩(Onboarding)은 조직사회화(Organizational Socialization)라고도 함.
 
 - 온보딩(Onboarding)은 근무시작일부터 조직의 일원으로서 필요한 지식, 스킬, 행동 등의 교육 과정을 뜻함.
 
-- 프리온보딩(Pre-Onboarding)은 입사 결정 이후 근무시작일 전까지 온보딩을 준비하는 기간을 말함. ~~검색 결과가 빈약한 것으로 보아 프리온보딩 프로세스 문화는 외국에서도 발달되어 있어보이지 않는다.~~
+- 프리온보딩(Pre-Onboarding)은 입사 결정 이후 근무시작일 전까지 온보딩을 준비하는 기간을 말함. ~~검색 결과가 빈약한 것으로 보아 프리온보딩 프로세스 문화는 외국에서도 발달되어 있어보이지 않음.~~
 
-  </div>
-  </details><br/>
+</div>
+</details><br/>
 
 ## DOM과 Virtual DOM
 
-<br/>
-
 ### 자바스크립트 자료구조 JavaScript Data Type
-
-<br/>
 
 - 자바스크립트의 Data Type엔 총 8가지가 있음.
 
   > Primitive Type 7가지
 
-      Number, BigInt, String, Null, Undefined, Boolean, Symbol
+  - Number, BigInt, String, Null, Undefined, Boolean, Symbol
 
   > 객체형(Object Type, Reference Type) 1가지
 
-      Primitive Type을 제외한 함수, 배열, 객체(Object)
+  - Primitive Type을 제외한 함수, 배열, 객체(Object)
 
 - 객체, 배열, 함수는 Primitive Type과 달리 복합적인 자료를 표현할 수 있고, 그 중 객체(Object)는 중괄호 { }를 이용해 Key와 Value로 구성된 Property 집합으로 만들 수 있음.
 
@@ -197,21 +182,19 @@ mermaid:
 
 ### 자료구조 객체(Object)와 DOM
 
-<br/>
-
 - 객체(Object)는 다음 3가지로 나눌 수 있음.
 
   > 1. 내장 객체(Built-in Objects)
   > 2. 브라우저 내장 객체(Native Object)
   > 3. 사용자 정의 객체(Host Object)
 
-<br/>
-
 - 브라우저 내장 객체(Native Object)에는 브라우저 객체 모델(BOM, Browser Object Model), 문서 객체 모델(DOM, Document Object Model)로 구성됨.
 
 - 내장 객체(Built-in Objects)는 자바스크립트 엔진에 내장되어 있다는 의미로, 필요한 경우에 생성해서 사용할 수 있음.
 
 - 브라우저 객체 모델(BOM, Browser Obejct Model)은 브라우저에서 계층 구조로 내장되어 제공하는 객체이고 브라우저에 관한 정보 제공, 모양 제어하는 정보가 포함되어 있음.
+
+<br/>
 
 - BOM은 웹 브라우저가 열릴 때마다 생성되는 객체들이 있음.
 
@@ -221,6 +204,8 @@ mermaid:
   - History 객체(웹 브라우저에 저장된 방문 기록이 포함)
   - Navigator (웹 브라우저 정보가 포함된 객체)
   - Screen (웹 브라우저의 화면 정보가 포함된 객체) 등
+
+<br/>
 
 - DOM(Document Object Model, 문서 객체 모델)은 프로그래밍 언어가 XML이나 HTML 문서에 접근하기 위한 구조, 표현(인터페이스)임.
 
@@ -235,8 +220,6 @@ mermaid:
 <br/>
 
 ## Virtual DOM 개념과 동작 방식
-
-<br/>
 
 - DOM(Document Object Model)은 웹 페이지를 이루는 태그들을 자바스크립트가 이용할 수 있게끔 브라우저가 트리구조로 만든 객체 모델
 
@@ -258,22 +241,22 @@ mermaid:
 ## 참고자료
 
 실무에서 바로 적용 가능한 리액트 핵심 기술 | 프리온보딩 FE 챌린지 4월
-https://www.wanted.co.kr/events/pre_challenge_fe_20
+<https://www.wanted.co.kr/events/pre_challenge_fe_20>
 
-Onboarding, Wikipedia  
-https://en.wikipedia.org/wiki/Onboarding
+Onboarding  
+<https://en.wikipedia.org/wiki/Onboarding>
 
 7 tips for successful pre-onboarding  
-https://www.linkedin.com/pulse/7-tips-successful-pre-onboarding-kronos-consulting-dubai/
+<https://www.linkedin.com/pulse/7-tips-successful-pre-onboarding-kronos-consulting-dubai/>
 
 [JavaScript] 자바스크립트의 객체 모델 DOM, BOM  
-https://codingwanee.tistory.com/entry/JavaScript-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EA%B0%9D%EC%B2%B4-%EB%AA%A8%EB%8D%B8-BOM
+<https://codingwanee.tistory.com/entry/JavaScript-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EA%B0%9D%EC%B2%B4-%EB%AA%A8%EB%8D%B8-BOM>
 
 [Javascript] 객체 모델 BOM, DOM  
-https://welldoing-dogfoot.tistory.com/10
+<https://welldoing-dogfoot.tistory.com/10>
 
 [React] DOM이란? 가상 돔 (Virtual DOM )이 나오게 된 이유  
-https://dev-cini.tistory.com/10
+<https://dev-cini.tistory.com/10>
 
 [React] Virtual DOM(가상돔)  
-https://jooy34.tistory.com/17
+<https://jooy34.tistory.com/17>
