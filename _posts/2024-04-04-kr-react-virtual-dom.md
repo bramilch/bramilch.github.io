@@ -3,8 +3,8 @@ layout: post
 title: 리액트 React Virtual DOM 개념과 동작방식 feat. 원티드 프리온보딩 챌린지 4월
 author: bramilch
 date: 2024-04-04 18:00:00 +0900
-categories: [Frontend, Web Development]
-tags: [Frontend, Web Development]
+categories: [Web Development, Frontend]
+tags: [Web Development, Frontend]
 pin: true
 math: true
 toc: true
