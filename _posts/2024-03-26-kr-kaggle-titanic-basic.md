@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 캐글 타이타닉으로 어디까지 갈 수 있을까 - 기본편
+title: "캐글 타이타닉으로 어디까지 갈 수 있을까 - 기본편"
 author: bramilch
 date: 2024-03-26 17:34:00 +0900
 categories: [Data Science, Kaggle]

@@ -8,7 +8,6 @@ tail_includes:
   - post-nav
   - comments
 ---
-
 {% include lang.html %}
 
 <article class="px-1">
@@ -30,11 +29,6 @@ tail_includes:
         </span>
       {% endif %}
 
-      <!-- View counts -->
-      <div class="post-counter" style="text-align: right;">
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbramilch.github.io&count_bg=%23313131&title_bg=%23252525&icon=openlayers.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false"/>
-      </div>
-      
       {% if page.image %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
