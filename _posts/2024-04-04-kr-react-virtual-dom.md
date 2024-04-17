@@ -72,7 +72,8 @@ mermaid:
 
   <details><summary> 프론트엔드 챌린지 4월 내용 </summary><div markdown="1"><br/>
 
-  실무에서 바로 적용 가능한 리액트 핵심 기술 | 프리온보딩 FE 챌린지 4월<https://www.wanted.co.kr/events/pre_challenge_fe_20>
+  실무에서 바로 적용 가능한 리액트 핵심 기술 | 프리온보딩 FE 챌린지 4월
+  <https://www.wanted.co.kr/events/pre_challenge_fe_20>
 
   아래의 내용은 위 링크의 내용을 그대로 참고하였습니다.
 
