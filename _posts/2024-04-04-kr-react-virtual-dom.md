@@ -14,28 +14,25 @@ mermaid:
   # alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
-<br/>
+<br>
 
 > 초안 작성일: 2024/04/02
+> Internal Link 오류 수정 완료: 2024/04/21
 
 ※ 이 글은 작성자에게 블로그 글 작성 소재가 되어준 원티드 교육 프로그램과 강사님들에 대한 고마운 마음으로 작성하였고, 좋은 교육 프로그램을 소개하고자 광고 받지 않고 작성하였습니다. 원티드 관계자 분들과 강사님들, 참고한 블로그의 작성자 분들께 감사드립니다.
 
-<br/>
+<br>
 
 **목차**
 
-- [머리말](##머리말)
-- [DOM과 Virtual DOM](##머리말)
+- [머리말](#머리말)
+- [DOM과 Virtual DOM](#dom과-virtual-dom)
+  - [자바스크립트 자료구조 JavaScript Data Type](#자바스크립트-자료구조-javascript-data-type)
+  - [자료구조 객체(Object)와 DOM](#자료구조-객체object와-dom)
+- [Virtual DOM 개념과 동작 방식](#virtual-dom-개념과-동작-방식)
+- [참고자료](#참고자료)
 
-  - [자바스크립트 자료구조 JavaScript Data Type](###자바스크립트-자료구조-JavaScript-Data-Type)
-
-  - [자료구조 객체(Object)와 DOM](<###자료구조-객체(Object)와-DOM>)
-
-- [Virtual DOM 개념과 동작 방식](##Virtual-DOM-개념과-동작-방식)
-
-- [참고자료](##참고자료)
-
-<br/>
+<br>
 
 ## 머리말
 
@@ -68,9 +65,9 @@ mermaid:
   - 이 외에, 챌린지를 수료하고 원티드를 통해 취업에 성공하면 최대 200만 원 합격 축하금 지급, 맞춤 도서 추천하고, 적극 구직자 5명 선정하여 길벗 IT 추천 도서 전자책 증정이 있음.
 
   </div>
-  </details><br/>
+  </details><br>
 
-  <details><summary> 프론트엔드 챌린지 4월 내용 </summary><div markdown="1"><br/>
+  <details><summary> 프론트엔드 챌린지 4월 내용 </summary><div markdown="1"><br>
 
   실무에서 바로 적용 가능한 리액트 핵심 기술 | 프리온보딩 FE 챌린지 4월
   <https://www.wanted.co.kr/events/pre_challenge_fe_20>
@@ -82,9 +79,9 @@ mermaid:
     1. 프로젝트 초기, 기획안과 UI를 기반으로 체계적인 컴포넌트 분리와 파일 구조 작성 전략 학습
     2. 필수적이고 즉시 활용 가능한 리액트 개념을 빠르고 간단하게 학습
     3. 리액트스러운 효율적이고 표준적인 코드 작성법 학습
-    4. 면접에서 리액트의 표준 코드 작성법과 프론트엔드 시각으로 기획안 및 UI/UX를 체계적으로 구조화하는 지식에 대해 답할 수 있도록 학습<br/>
+    4. 면접에서 리액트의 표준 코드 작성법과 프론트엔드 시각으로 기획안 및 UI/UX를 체계적으로 구조화하는 지식에 대해 답할 수 있도록 학습<br>
 
-    <details><summary> 커리큘럼 </summary><div markdown="1"><br/>
+    <details><summary> 커리큘럼 </summary><div markdown="1"><br>
       
       - Week 1-1
         리액트의 핵심 원리를 소개합니다.
@@ -121,7 +118,7 @@ mermaid:
     </details>
 
   </div>
-  </details><br/>
+  </details><br>
 
 - 우연히 발견한 원티드 프리온보딩 챌린지 4월 시리즈 중 포트폴리오에 Docker로 배포 경험 더하기가 현재 준비하고 있는 웹 서비스, 데이터 분석 포트폴리오에 도움이 될까 유심히 보다가 5개를 모두 신청함.
 
@@ -135,24 +132,24 @@ mermaid:
 
 - 커리큘럼의 교육 목표와 내용이 너무 과장되지 않고 면접과 기초 지식 학습에 도움이 될 것 같았음.
 
-<br/>
+<br>
 
 <details><summary> 원티드 회사 사업 내용과 프리온보딩 챌린지 사업 리서치 </summary>
-<div markdown="1"><br/>
+<div markdown="1"><br>
 
 - 원티드는 B2C 구인/구직/이직 매칭 사업, B2B HR 솔루션 사업, 커리어/HR 연관 사업(교육/콘텐츠/이벤트/코칭/네트워킹)이 주이고, 기업 리뷰 플랫폼 사업과 프리랜서 매칭/아웃소싱 플랫폼 사업으로 확장하려는 것으로 보임.
 
-  - 잡플래닛과 같은 크레딧잡을 2018년도에 인수하여 [원티드 인사이트](https://www.wanted.co.kr/events/pre_challenge_fe_20)를 운영하고 있음. ~~크레딧잡 시절에 꽤 이용했으나 난 잘 사용하지 않음.~~
+  - 잡플래닛과 같은 크레딧잡을 2018년도에 인수하여 [원티드 인사이트](https://www.wanted.co.kr/events/pre_challenge_fe_20/)를 운영하고 있음. ~~크레딧잡 시절에 꽤 이용했으나 난 잘 사용하지 않음.~~
 
 - HR과 관련한 다양한 솔루션을 제공하고 있는데, 채용 솔루션('원티드 채용 솔루션'), HR 업무 솔루션(원티드 스페이스), 프리랜서 매칭 솔루션(원티드 긱스), 기업 리뷰 플랫폼인 원티드 인사이트와 연계하여 연봉, 인원, 매출, 전·현직자 리뷰 등을 관리할 수 있게 해주는 솔루션(원티드 인사이트)가 있음.
 
 - 최근 구인/구직/커리어 교육 기업들의 수강생과 수료생, 교육 프로그램 관리를 위한 B2B/B2G 솔루션 원티드 취업지원시스템을 런칭한 것으로 보임. 현재는 주로 취준생을 타겟팅한 구직 직무 교육기업/기관들에게 큰 돈줄이 되고 있는 고용노동부의 '국민내일배움카드' 사업에서의 교육 수강생들의 구직 활동, 취업 성과까지 관리할 수 있게 하여 구직 직무 교육기업/기관들의 연계 위한 솔루션으로 보이나 현직, 이직러들을 타겟팅한 커리어/직무 교육기업 패스트캠퍼스와 같은 비즈니스 모델도 염두에 두는 것으로 보임.
 
 </div>
-</details><br/>
+</details><br>
 
 <details><summary> 온보딩(Onboarding)과 프리온보딩(Pre-Onboarding)의 차이 </summary>
-<div markdown="1"><br/>
+<div markdown="1"><br>
   
 - 인사조직관리 분야에서 온보딩(Onboarding)은 조직사회화(Organizational Socialization)라고도 함.
 
@@ -161,7 +158,7 @@ mermaid:
 - 프리온보딩(Pre-Onboarding)은 입사 결정 이후 근무시작일 전까지 온보딩을 준비하는 기간을 말함. ~~검색 결과가 빈약한 것으로 보아 프리온보딩 프로세스 문화는 외국에서도 발달되어 있어보이지 않음.~~
 
 </div>
-</details><br/>
+</details><br>
 
 ## DOM과 Virtual DOM
 
@@ -179,7 +176,7 @@ mermaid:
 
 - 객체, 배열, 함수는 Primitive Type과 달리 복합적인 자료를 표현할 수 있고, 그 중 객체(Object)는 중괄호 { }를 이용해 Key와 Value로 구성된 Property 집합으로 만들 수 있음.
 
-<br/>
+<br>
 
 ### 자료구조 객체(Object)와 DOM
 
@@ -189,13 +186,15 @@ mermaid:
   > 2. 브라우저 내장 객체(Native Object)
   > 3. 사용자 정의 객체(Host Object)
 
+<br>
+
 - 브라우저 내장 객체(Native Object)에는 브라우저 객체 모델(BOM, Browser Object Model), 문서 객체 모델(DOM, Document Object Model)로 구성됨.
 
 - 내장 객체(Built-in Objects)는 자바스크립트 엔진에 내장되어 있다는 의미로, 필요한 경우에 생성해서 사용할 수 있음.
 
 - 브라우저 객체 모델(BOM, Browser Obejct Model)은 브라우저에서 계층 구조로 내장되어 제공하는 객체이고 브라우저에 관한 정보 제공, 모양 제어하는 정보가 포함되어 있음.
 
-<br/>
+<br>
 
 - BOM은 웹 브라우저가 열릴 때마다 생성되는 객체들이 있음.
 
@@ -206,7 +205,7 @@ mermaid:
   - Navigator (웹 브라우저 정보가 포함된 객체)
   - Screen (웹 브라우저의 화면 정보가 포함된 객체) 등
 
-<br/>
+<br>
 
 - DOM(Document Object Model, 문서 객체 모델)은 프로그래밍 언어가 XML이나 HTML 문서에 접근하기 위한 구조, 표현(인터페이스)임.
 
@@ -218,7 +217,7 @@ mermaid:
 
 - 브라우저는 HTML문서 로드 전 Document 객체를 먼저 생성하고, Document 객체를 최상위 객체로 하는 DOM 객체들로 구성된 DOM 트리를 생성함. 웹 페이지에 존재하는 HTML 요소에 접근하고자 할 때는 반드시 Document 객체에 접근하여야 함.
 
-<br/>
+<br>
 
 ## Virtual DOM 개념과 동작 방식
 
@@ -236,8 +235,8 @@ mermaid:
 
   3. 변경된 DOM 부분만 수정
 
-<br/>
-<br/>
+<br>
+<br>
 
 ## 참고자료
 
