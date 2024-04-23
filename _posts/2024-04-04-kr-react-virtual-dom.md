@@ -5,7 +5,7 @@ author: bramilch
 date: 2024-04-04 18:00:00 +0900
 categories: [Web Development, Frontend]
 tags: [Web Development, Frontend]
-pin: true
+pin: false
 math: true
 toc: true
 comments: false
