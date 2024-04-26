@@ -2,7 +2,7 @@
 layout: post
 title: "서블릿 Servlet 실행 시 톰캣 서버 오류 해결 feat. 삽질의 기록"
 author: bramilch
-date: 2024-04-23 18:00:00 +0900
+date: 2024-04-25 18:00:00 +0900
 categories: [Backend, Data Engineering]
 tags: [Backend, Data Engineering]
 pin: true
