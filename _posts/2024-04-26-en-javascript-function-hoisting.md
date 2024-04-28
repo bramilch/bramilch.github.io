@@ -20,10 +20,11 @@ mermaid:
 > 2024/04/27: Revised the text. Context, unclear wording, etc.
  
 ※ There may be errors in the content.
+※ This article is a summary of the content of NAVER Connect Foundation's Boost Course Web Programming (Full Stack) lecture and supplemented by myself.
 
 <br>
 
-**목차**
+**Table of Contents**
 
 - [JavaScript function characteristics, Call Stack, default return value, keyword arguments](#javascript-function-characteristics-call-stack-default-return-value-keyword-arguments)
 - [Function Declarations, Function Expressions, and Hoisting](#function-declarations-function-expressions-and-hoisting)
