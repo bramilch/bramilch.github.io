@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리눅스 배포판과 레드햇과 데비안 계열, CentOS와 우분투 비교. CentOS 그 시작과 종료"
+title: "리눅스 배포판과 CentOS, 우분투 비교"
 author: bramilch
 date: 2024-04-29 18:00:00 +0900
 categories: [Backend, Data Engineering]
@@ -155,14 +155,14 @@ mermaid:
 
   ## 참고자료
 
-[Wikipedia] CentOS
+[Wikipedia] CentOS  
 <https://en.wikipedia.org/wiki/CentOS>
 
-[Make Use Of] Why Does Linux Have So Many Distributions? Linux Distros Explained
+[Make Use Of] Why Does Linux Have So Many Distributions? Linux Distros Explained  
 <https://www.makeuseof.com/why-so-many-linux-distributions/#:~:text=Linux%20is%20the%20kernel%2C%20and,the%20OS%20are%20generally%20free>
 
-[Red Hat] What to know about CentOS Linux EOL
+[Red Hat] What to know about CentOS Linux EOL  
 <https://www.redhat.com/en/topics/linux/centos-linux-eol#:~:text=Why%20is%20CentOS%20Linux%20going,)%20on%20June%2030%2C%202024>
 
-[나무위키] Linux/배포판
+[나무위키] Linux/배포판  
 <https://namu.wiki/w/Linux/%EB%B0%B0%ED%8F%AC%ED%8C%90#s-2.1>
