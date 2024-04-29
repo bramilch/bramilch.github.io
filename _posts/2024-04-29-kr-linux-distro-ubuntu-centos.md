@@ -159,10 +159,10 @@ mermaid:
 <https://en.wikipedia.org/wiki/CentOS>
 
 [Make Use Of] Why Does Linux Have So Many Distributions? Linux Distros Explained
-<https://www.makeuseof.com/why-so-many-linux-distributions/#:~:text=Linux%20is%20the%20kernel%2C%20and,the%20OS%20are%20generally%20free.>
+<https://www.makeuseof.com/why-so-many-linux-distributions/#:~:text=Linux%20is%20the%20kernel%2C%20and,the%20OS%20are%20generally%20free>
 
 [Red Hat] What to know about CentOS Linux EOL
-<https://www.redhat.com/en/topics/linux/centos-linux-eol#:~:text=Why%20is%20CentOS%20Linux%20going,)%20on%20June%2030%2C%202024.>
+<https://www.redhat.com/en/topics/linux/centos-linux-eol#:~:text=Why%20is%20CentOS%20Linux%20going,)%20on%20June%2030%2C%202024>
 
 [나무위키] Linux/배포판
 <https://namu.wiki/w/Linux/%EB%B0%B0%ED%8F%AC%ED%8C%90#s-2.1>
