@@ -37,7 +37,7 @@ mermaid:
 
 <br>
 
-<center>많은 종류의 리눅스 배포판</center>
+<center><span style="font-size:1.2em;">많은 종류의 리눅스 배포판</span></center>
 ![linux distro](\assets\img\posts\2024-04-29-linux-distro.webp)
 
 <br>
