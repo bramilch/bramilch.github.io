@@ -12,6 +12,8 @@ comments: false
 mermaid:
   false
   # alt: Responsive rendering of Chirpy theme on multiple devices.
+image:
+  path: ./assets/img/posts/2024-04-25-kr-servlet-tomcat-error/problem-occured-popup.png
 ---
 
 <br>
@@ -49,7 +51,7 @@ mermaid:
 - 아예 서버가 Stopped 되고 돌아가지 않음.
 - 치명적인 것은 정상적인 다른 Servlet을 실행해도 되지 않는다는 것.
 
-![Problem Occured](.\assets\img\posts\2024-04-25-kr-servlet-tomcat-error\problem-occured-popup.png)  
+![Problem Occured](/assets/img/posts/2024-04-25-kr-servlet-tomcat-error/problem-occured-popup.png)  
 'Starting Tomcat v10.1 Server at localhost' has encountered a problem.  
 ~~detail에서도 설명 안 해주는 센스!~~
 

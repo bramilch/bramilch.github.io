@@ -12,6 +12,8 @@ comments: false
 mermaid:
   false
   # alt: Responsive rendering of Chirpy theme on multiple devices.
+image:
+  path: ./assets/img/posts/2024-04-23-kr-CLI-types-by-OS/os-cli-comparison.png
 ---
 
 <br>
@@ -64,7 +66,7 @@ mermaid:
 
 <br>
 
-![CLI Comparision](.\assets\img\posts\2024-04-23-kr-CLI-types-by-OS\os-cli-comparison.png)
+![CLI Comparision](/assets/img/posts/2024-04-23-kr-CLI-types-by-OS/os-cli-comparison.png)
 
 <br>
 

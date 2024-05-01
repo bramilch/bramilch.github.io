@@ -12,6 +12,8 @@ comments: false
 mermaid:
   false
   # alt: Responsive rendering of Chirpy theme on multiple devices.
+image:
+  path: ./assets/img/posts/2024-04-29-linux-distro/linux-distro.png
 ---
 
 <br>
@@ -109,6 +111,8 @@ mermaid:
 
 <center><span style="font-size:1.2em;">CentOS와 Ubutu 비교</span></center>
 
+<br>
+
 | 기능 | CentOS 센트OS | Ubuntu 우분투 |
 |------------|---------------------|------------------|
 | 안정성과 신뢰성| 안정성과 장기적인 지원으로 유명함 | 커뮤니티 지원으로 안정성 제공 |
@@ -160,9 +164,10 @@ mermaid:
 
   - 많은 사람들이 이를 인프라 계획에 심각한 혼란을 초래하는 것으로 보고 대체 솔루션을 모색하게 됨.
   
-  <br>
+<br>
+<br>
 
-  ## 참고자료
+## 참고자료
 
 [Wikipedia] CentOS  
 <https://en.wikipedia.org/wiki/CentOS>
