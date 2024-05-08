@@ -23,7 +23,7 @@ timezone: Asia/Seoul
 
 title: bramilch # the main title
 
-tagline: Data Science, AI, Business Analytics & Intelligence, Computer Science, Mathematics, Statistics # it will display as the sub-title
+tagline: Data Engineering and Science # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Technical writing for Data Science, AI, Business Analytics & Intelligence, Computer Science, Mathematics, Statistics
