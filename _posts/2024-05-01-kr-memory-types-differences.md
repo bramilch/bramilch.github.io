@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SRAM, DRAM, NAND의 차이점 및 특징"
+title: "컴퓨팅 4대 리소스 - 메모리 Memory 유형별 차이"
 author: bramilch
 date: 2024-05-01 18:00:00 +0900
 categories: [Backend, Data Engineering]
@@ -18,26 +18,29 @@ image:
 
 <br>
 
-> 2024/05/01: 초안 작성
-> 2024/05/08: 문장 수정, NAND 개념 등 보완
+> 2024/05/01: 초안 작성  
+> 2024/05/08: 문장 수정, NAND 개념 등 보완  
+> 2024/05/09: SDRAM, DDR SDRAM 내용 추가  
 
-※ 내용에 오류가 있을 수 있습니다.
-※ 내용을 계속 추가, 수정, 보완하고 있습니다.
+※ 내용에 오류가 있을 수 있습니다.  
+※ 내용을 계속 추가, 수정, 보완하고 있습니다.  
 
 <br>
 
 **목차**
 
 - [결론](#결론)
-- [SRAM, DRAM, NAND 플래시 메모리 비교](#sram-dram-nand-플래시-메모리-비교)
+- [SRAM, DRAM, NAND 플래시 메모리, SDRAM, DDR SDRAM 비교](#sram-dram-nand-플래시-메모리-sdram-ddr-sdram-비교)
 - [SRAM, DRAM, Nand Flash Memory 내외부 비교](#sram-dram-nand-flash-memory-내외부-비교)
   - [SRAM (정적 랜덤 액세스 메모리)](#sram-정적-랜덤-액세스-메모리)
   - [DRAM (동적 랜덤 액세스 메모리)](#dram-동적-랜덤-액세스-메모리)
   - [NADN Flash Memory (낸드 플래시 메모리)](#nadn-flash-memory-낸드-플래시-메모리)
-- [SRAM, DRAM, Nand Flash Memory 특징 비교](#sram-dram-nand-flash-memory-특징-비교)
+- [SRAM, DRAM, Nand Flash Memory, SDRAM, DDR SDRAM 특징 비교](#sram-dram-nand-flash-memory-sdram-ddr-sdram-특징-비교)
   - [SRAM 특징, 용도, 플립플롭 Flip-flop](#sram-특징-용도-플립플롭-flip-flop)
   - [DRAM 특징, 용도, 리프레시 Refresh, 커패시터 Capacitor](#dram-특징-용도-리프레시-refresh-커패시터-capacitor)
   - [NAND 용어, NAND Flash 특징, 용도, NAND 게이트 NAND Gate](#nand-용어-nand-flash-특징-용도-nand-게이트-nand-gate)
+  - [SDRAM 개념, 특징, 용도, NAND 게이트 NAND Gate](#sdram-개념-특징-용도-nand-게이트-nand-gate)
+  - [DDR SDRAM 개념, 특징, 용도, NAND 게이트 NAND Gate](#ddr-sdram-개념-특징-용도-nand-게이트-nand-gate)
 - [참고자료](#참고자료)
 
 <br>
@@ -52,11 +55,15 @@ image:
 
 - 플립플롭 Flip-flop, 커패시터 Capacitor, Refresh 주기, NAND Gate 등의 개념과 함께 이러한 메모리 유형 간의 차이점을 이해하는 것은 컴퓨터에서 데이터가 저장되고 액세스되는 방식을 파악하고, 어디에 사용될 수 있는지 이해하는 데 필수
 
-- SRAM은 빠른 휘발성 데이터 저장을 위해 플립플롭을 사용하고, DRAM은 느린 휘발성 데이터 저장을 위해 커패시터를 사용함. 낸드 플래시 메모리는 NAND Gate 사용함으로써 전원 없이도 비휘발성으로 저장된 데이터를 유지할 수 있음.
+- SRAM은 빠른 휘발성 데이터 저장을 위해 플립플롭을 사용하고, DRAM은 SRAM 보다 느린 휘발성 데이터를 저장하기 위해 커패시터를 사용함. 낸드 플래시 메모리는 NAND Gate 사용함으로써 전원 없이도 비휘발성으로 저장된 데이터를 유지할 수 있음.
   
+- SDRAM과 DDR SDRAM은 시스템 클럭과 작동을 동기화하는 DRAM 유형으로, 비동기식인 DRAM에 비해 더 빠른 데이터 전송 속도와 더 높은 메모리 대역폭을 제공함. 
+
+- DDR SDRAM은 Double Data Rate를 통해 데이터 전송 속도를 두 배로 높여 성능을 더욱 향상시켜 고성능 컴퓨팅 애플리케이션에 적합
+
 <br>
 
-## SRAM, DRAM, NAND 플래시 메모리 비교
+## SRAM, DRAM, NAND 플래시 메모리, SDRAM, DDR SDRAM 비교
 
 <br>
 
@@ -64,24 +71,27 @@ image:
 
 - 각각 고유한 특성, 용도, 메커니즘이 있어 서로 구별됨.
 
+- 접근 속도 Access Velocity는 SRAM > SDRAM, DDR SDRAM > DRAM > NAND Flash
+
 <br>
 
 <center><span style="font-size:1.2em;">SRAM, DRAM, NAND Flash 메모리 비교</span></center>
 
+
 <br>
 
-| 기능 | SRAM | DRAM | 낸드 플래시 메모리 |
-|------------------------|-------------------------------------|-------------------------------------|-------------------------------------|
-| **기술** | 플립플롭 사용 | 커패시터 및 트랜지스터 사용 | NAND 게이트 사용 |
-| **변동성** | 비휘발성 | 휘발성, Refresh 필요 | 비휘발성 | 비휘발성
-**접속 시간** | DRAM보다 빠름 | SRAM보다 느림 | SRAM 및 DRAM보다 느림 |
-| **전력 사용량** | 더 많은 전력 소비 | 더 적은 전력 소비 | 상대적으로 낮은 전력 소비
-| **밀도** | 낮은 밀도, 더 비싸다 | 높은 밀도, 더 저렴하다 | 매우 높은 밀도
-| **사용 사례** | CPU 캐시, 고속 레지스터 | 메인 시스템 메모리, 모바일 장치 | SSD, USB 플래시 드라이브, 메모리 카드|
-| **구성요소** | 플립플롭 | 커패시터 | NAND 게이트 |
-| **역할** |  기본 스토리지 요소 | 충전 저장 | 데이터 저장 | 
-| **Refresh 여부** | - | 주기적으로 필요 | - |
-| **Refresh 프로세스** |  - | 데이터 읽기 및 다시 쓰기 포함| - |
+|  | SRAM | DRAM | NAND Flash Memory | SDRAM | DDR SDRAM |
+|------------------------|-------------------------------------|-------------------------------------|-------------------------------------|-------------------------------------|-------------------------------------|
+| **기술** | 플립플롭 사용 | 커패시터 및 트랜지스터 사용 | NAND 게이트 사용 | 커패시터 및 트랜지스터 사용 | 커패시터 및 트랜지스터 사용 |
+| **휘발성** | 휘발성 | 휘발성, Refresh 필요 | 비휘발성 | 휘발성  | 휘발성 |
+**접근 속도** | DRAM보다 빠름 | SRAM보다 느림 | SRAM, DRAM보다 느림 | DRAM보다 빠르나 SRAM보다 느림 | SDRAM과 유사함 |
+| **전력 사용량** | DRAM보다 많은 전력 소비 | SRAM보다 적은 전력 소비 | 상대적으로 낮은 전력 소비 | 보통의 전력 사용량 | 보통의 전력 사용량 |
+| **밀도** | 낮은 밀도, 비쌈 | 높은 밀도, SRAM보다 저렴 | 매우 높은 밀도 | 더 낮은 밀도 | 더 높은 밀도 |
+| **사용 사례** | CPU 캐시, 고속 레지스터 | 메인 시스템 메모리, 모바일 장치 | SSD, USB 플래시 드라이브, 메모리 카드| 메인 메모리(RAM), 임베디드 시스템 | 메인 메모리(RAM), 그래픽 카드 |
+| **구성요소** | 플립플롭 | 커패시터 | NAND 게이트 | 커패시터 | 커패시터 |
+| **역할** |  기본 스토리지 요소 | 충전 저장 | 데이터 저장 | 데이터 저장 | 데이터 저장 |
+| **Refresh 여부** | - | 주기적으로 필요 | - | 주기적으로 필요 | 주기적으로 필요 |
+| **Refresh 프로세스** |  - | 데이터 읽기 및 다시 쓰기 포함| - | 주기적 Refresh | 주기적 Refresh |
 
 <br>
 
@@ -159,7 +169,7 @@ image:
 
 <br>
 
-## SRAM, DRAM, Nand Flash Memory 특징 비교
+## SRAM, DRAM, Nand Flash Memory, SDRAM, DDR SDRAM 특징 비교
 
 <br>
 
@@ -287,7 +297,54 @@ image:
   
   - 이를 통해 낸드 플래시 메모리는 비휘발성으로 전원 없이도 저장된 데이터를 유지할 수 있음. 반면, SRAM은 빠른 휘발성 데이터 저장을 위해 플립플롭을 사용하고, DRAM은 느린 휘발성 데이터 저장을 위해 커패시터를 사용함.
 
+### SDRAM 개념, 특징, 용도, NAND 게이트 NAND Gate
 
+<br>
+
+- SDRAM 개념
+ 
+  - SDRAM Synchronous Dynamic Random-Access Memory 동기식 동적 랜덤 액세스 메모리
+
+  - SDRAM은 시스템 클럭과 작동을 동기화하는 동적 랜덤 액세스 메모리(DRAM)의 한 유형임.
+
+  - 시스템 클럭과 독립적으로 작동하고 대기 상태가 필요한 비동기식 DRAM과 달리 ***SDRAM은 클럭 신호에 따라 데이터 전송을 조정***하므로 데이터 전송 속도가 더 빠름.
+
+<br>
+
+- SDRAM 특징
+  
+  - 동기화: SDRAM은 데이터 읽기 및 쓰기와 같은 내부 작업을 시스템 클럭과 동기화함. 이러한 동기화를 통해 비동기식 DRAM에 비해 정확한 타이밍과 빠른 데이터 전송 속도 구현 가능
+  
+  - 버스트 모드 Burst Mode: SDRAM은 버스트 모드를 지원하여 단일 주소를 수신한 후 여러 데이터 워드를 연속적으로 빠르게 전송할 수 있음. 이 기능은 메모리 대역폭과 전반적인 시스템 성능을 향상시킴.
+  
+  - 파이프라인 아키텍처 Pipeline Architecture: SDRAM은 파이프라인 아키텍처를 채택하여 여러 메모리 요청을 중복 처리할 수 있음. 지연 시간을 줄이고 메모리 효율성을 향상시킴.
+  
+  - 변형: SDRAM은 클록 사이클당 한 번 데이터를 전송하는 SDR SDRAM(Single Data Rate Synchronous DRAM)과 클록 사이클당 두 번 데이터를 전송하는 DDR SDRAM(Double Data Rate Synchronous DRAM) 등 다양한 형태로 제공됨.
+
+<br>
+
+### DDR SDRAM 개념, 특징, 용도, NAND 게이트 NAND Gate
+
+<br>
+
+- DDR SDRAM Double Data Rate Synchronous Dynamic Random-Access Memory 더블 데이터 전송률 동기식 동적 랜덤 액세스 메모리
+
+- DDR SDRAM은 클럭 신호의 상승 및 하강 edges 모두에서 데이터를 전송하여 데이터 전송 속도를 두 배로 높이는 SDRAM의 발전된 버전
+
+- 이중 데이터 전송률(DDR) 작동은 기존 SDRAM에 비해 메모리 대역폭을 효과적으로 두 배로 늘림.
+
+<br>
+
+- DDR SDRAM 특징
+
+  - 더블 데이터 전송률: DDR SDRAM은 클럭 신호의 상승 에지와 하강 에지 모두에서 데이터를 전송하므로 SDR SDRAM에 비해 데이터 전송 속도가 효과적으로 두 배가 됨. 예를 들어, 200MHz에서 실행되는 DDR SDRAM은 400MT/s(초당 백만 번의 전송)임.
+
+  - 향상된 대역폭: 데이터 전송 속도를 두 배로 높인 DDR SDRAM은 게임, 멀티미디어, 데이터 처리와 같은 까다로운 애플리케이션에 필수적인 메모리 대역폭을 더 많이 제공함.
+
+  - 변형: DDR SDRAM은 DDR, DDR2, DDR3, DDR4, DDR5 등 여러 가지 버전으로 제공되며, 각 버전은 이전 버전에 비해 데이터 전송률 증가, 전력 소비 감소, 향상된 성능을 제공함.
+
+  - 이전 버전과의 호환성: DDR SDRAM 모듈은 일반적으로 이전 DDR 표준과 호환되어, 필요한 경우 더 낮은 속도로 작동할 수 있음. 이러한 호환성 덕분에 메모리 인프라를 완전히 점검할 필요 없이 기존 시스템을 쉽게 업그레이드할 수 있음.
+  
   
 <br>
 <br>
@@ -315,3 +372,8 @@ image:
 [Wikipedia] Die (integrated circuit)  
 <https://en.wikipedia.org/wiki/Die_(integrated_circuit)>
 
+[Wikipedia] Synchronous dynamic random-access memory  
+<https://en.wikipedia.org/wiki/Synchronous_dynamic_random-access_memory>
+
+[Wikipedia] DDR SDRAM    
+<https://en.wikipedia.org/wiki/DDR_SDRAM>
