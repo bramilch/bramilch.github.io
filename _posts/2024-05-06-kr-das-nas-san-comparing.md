@@ -19,8 +19,9 @@ image:
 <br>
 
 > 2024/05/05: 초안 작성
-> 2024/05/06: 내용 보완 (적합한 사용 환경, RAID)
-
+> 2024/05/06: 적합한 사용 환경, RAID 내용 추가 
+> 2024/05/11: 비교 정리 부분 보완
+ 
 ※ 표지 이미지는 내용이 좋아 사용했으나, 고화질 버전을 찾지 못했습니다.  
 ※ 내용에 오류가 있을 수 있습니다.  
 ※ 내용을 계속 추가, 수정, 보완하고 있습니다.
@@ -29,7 +30,7 @@ image:
 
 **목차**
 
-- [DAS, NAS, SAN 비교](#das-nas-san-비교)
+- [DAS, NAS, SAN 비교 정리](#das-nas-san-비교-정리)
 - [DAS (Direct Attached Storage) 장점, 단점, 적합한 사용 환경](#das-direct-attached-storage-장점-단점-적합한-사용-환경)
 - [NAS (Network Attached Storage) 장점, 단점, 적합한 사용 환경](#nas-network-attached-storage-장점-단점-적합한-사용-환경)
 - [SAN (Storage Area Network) 장점, 단점, 적합한 사용 환경](#san-storage-area-network-장점-단점-적합한-사용-환경)
@@ -38,11 +39,19 @@ image:
 <br>
 
 
-## DAS, NAS, SAN 비교
+## DAS, NAS, SAN 비교 정리
 
 <br>
 
 - DAS (Direct Attached Storage), NAS (Network Attached Storage), SAN (Storage Area Network)은 컴퓨팅 환경에서 사용되는 세 가지 유형의 스토리지 아키텍처임.
+
+- <U>**DAS는 서버마다 스토리지를 전용 케이블로 직접 연결하는 방식임. 클라이언트들이 각각의 서버를 통해 해당 스토리지에 접근함. 저장 데이터가 적고 *공유*가 필요 없는 환경에 적합함.**
+
+- **NAS는 서버와 스토리지를 네트워크를 통해 연결하는 방식임. 클라이언트들은 서버들을 통해 자유롭게 이더넷 스위치 Ethernet Switch를 통해 스토리지에 접근함(서버들과 네트워크 상 독립적으로 연결). *파일 공유가 장점.***
+
+- **SAN는 서버들과 스토리지를 연결하는 전용 네트워크를 광 채널 FC, Fiber Channel로써 별도로 구성하는 방식임. 전용 케이블로 서버-스토리지를 연결한 DAS의 빠른 처리 장점과 NAS의 이더넷 스위치를 통한 서버들의 자유로운 접근인 파일 공유 장점을 혼합한 방식.**
+
+- **SAN에서 클라이언트들은 이더넷 스위치를 통해 서버들에 요청을 보내고, 서버들은 파이버 채널 스위치 FCS, Fiber Channel Switch를 통해 스토리지들에 접근하여 응답함.**</U>
 
 - DAS는 단순성과 비용 효율성이 우선시되는 단일 서버 환경에 가장 적합하고, NAS는 중소기업 또는 가정용 미디어 공유와 같이 여러 사용자 또는 장치에서 파일에 대한 공유 액세스가 필요한 환경에 적합함. SAN은 엔터프라이즈 환경의 고성능 확장형 스토리지 솔루션, 특히 데이터베이스 및 가상화와 같이 스토리지에 직접 빠르게 액세스해야 하는 애플리케이션 사용에 적합함.
 
@@ -205,4 +214,4 @@ image:
 [Wikipedia] STORAGE TECHNOLOGIES – DAS, NAS AND SAN
 <https://abdullrhmanfarram.wordpress.com/2013/04/08/storage-technologies-das-nas-and-san/>
 
-
+[길벗알앤디] 책 시나공 정보처리기사 필기
