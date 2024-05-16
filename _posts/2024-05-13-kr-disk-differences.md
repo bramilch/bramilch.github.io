@@ -2,7 +2,7 @@
 layout: post
 title: "컴퓨팅 4대 리소스 - 디스크 종류와 특성 비교"
 author: bramilch
-date: 2024-05-06 18:00:00 +0900
+date: 2024-05-13 18:00:00 +0900
 categories: [Backend, Data Engineering]
 tags: [Backend, Data Engineering]
 pin: true
@@ -28,16 +28,16 @@ image:
 
 **목차**
 
+- [디스크별 정리](#디스크별-정리)
 - [HDD, SSD, HHD, Optical Disk, RAID 개념, 특징](#hdd-ssd-hhd-optical-disk-raid-개념-특징)
 - [참고자료](#참고자료)
 
 <br>
 
 
-## HDD, SSD, HHD, Optical Disk, RAID 개념, 특징
+## 디스크별 정리
 
 <br>
-
 
 - HDD는 GB당 저렴한 비용으로 대용량 스토리지를 제공하지만 액세스 시간이 느리고 기계적 고장에 더 취약
 
@@ -49,6 +49,9 @@ image:
 
 - RAID는 여러 개의 물리적 디스크를 단일 논리 장치로 결합하여 데이터 중복성 및/또는 성능 최적화를 제공하며, 사용 사례에 따라 다양한 구성을 사용할 수 있음.
 
+<br>
+
+## HDD, SSD, HHD, Optical Disk, RAID 개념, 특징
 
 <br>
 
@@ -81,7 +84,7 @@ image:
 - 하이브리드 HHD (Hybrid Hard Disk Drives):
 
 
-  - 하이브리드 HHD는 기존의 회전식 HHD 플래터와 캐시 역할을 하는 소량의 솔리드 스테이트 메모리(보통 NAND 플래시)를 결합한 것
+  - 하이브리드 HHD는 기존의 회전식 HDD(하드 디스크 드라이브) 플래터와 캐시 역할을 하는 소량의 솔리드 스테이트 메모리(보통 NAND 플래시)를 결합한 것
 
   - 특징
     - HDD의 대용량 저장 용량과 SSD의 빠른 액세스 시간 사이의 균형을 제공합
@@ -131,28 +134,6 @@ image:
 
   
 <br>
-
-
-
-<br>
-
-
-
-<br>
-
-
-
-
-<br>
-
-
-
-<br>
-
-
-
-  
-<br>
 <br>
 
 ## 참고자료
@@ -166,4 +147,6 @@ image:
 [Wikipedia] Hybrid drive
 <https://en.wikipedia.org/wiki/Hybrid_drive>
 
+[Wikipedia] Optical disc
+<https://en.wikipedia.org/wiki/Optical_disc>
 
