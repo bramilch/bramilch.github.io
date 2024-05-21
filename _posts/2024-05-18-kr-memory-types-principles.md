@@ -8,7 +8,7 @@ tags: [Backend, Data Engineering]
 pin: true
 math: true
 toc: true
-comments: true
+comments: false
 mermaid:
   false
   # alt: Responsive rendering of Chirpy theme on multiple devices.
