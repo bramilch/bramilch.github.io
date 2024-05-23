@@ -17,7 +17,8 @@ image:
 <br>
 
 > 2024/05/21: 초안 작성  
- 
+> 2024/05/23: 각 언어별 웹프레임워크 테이블 추가
+  
 ※ 내용에 오류가 있을 수 있습니다.  
 ※ 내용을 계속 추가, 수정, 보완하고 있습니다.  
 
@@ -48,6 +49,37 @@ image:
 - 또 각 웹 프레임워크는 각각의 아키텍처를 갖기 때문에 학습에 시간, 노력이 필요함.
 
 - 프론트엔드, 백엔드 및 풀스택 웹 프레임워크는 웹 개발의 필수 구성 요소로, 각각 고유한 역할을 수행하며 웹 애플리케이션의 전반적인 기능과 모양 결정지을 수 있음. 이러한 ***프레임워크 간의 차이점과 유사점을 이해하는 것은 특정 프로젝트에 어떤 기술을 사용할지 정보에 입각한 결정을 내리는 데 매우 중요함.***
+
+<br>
+
+언어별 웹 프레임워크 정리
+
+|주요 사용 언어|프레임워크 이름|설명|웹사이트|
+|---|---|---|---|
+|**JavaScript**|React|사용자 인터페이스, 특히 단일 페이지 애플리케이션을 구축하기 위한 자바스크립트 리액트 라이브러리 |[React](https://reactjs.org/)|
+||Angular|웹 애플리케이션 구축을 위한 Full-fledged framework|[Angular](https://angular.io/)|
+||Vue.js|사용자 인터페이스 구축을 위한 Progressive framework|[Vue.js](https://vuejs.org/)|
+||Express.js|최소한의 유연성을 강조 Node.js 웹 애플리케이션 프레임워크|[Express.js](http://expressjs.com/)|
+|**Python**|Django|빠른 개발과 깔끔하고 실용적인 디자인을 장려하는 Python 웹 풀스택 프레임워크|[Django](https://www.djangoproject.com/)|
+||Flask|Python으로 작성된 Flask Micro 웹 프레임워크|[Flask](https://flask.palletsprojects.com/en/2.0.x/)|
+|**PHP**|Laravel|PHP Laravel MVC 아키텍처 패턴을 따르는 PHP 프레임워크|[Laravel](https://laravel.com/)|
+||Symfony|웹 애플리케이션 및 서비스를 위한 Symfony PHP 프레임워크|[Symfony](https://symfony.com/)|
+|**Java**|Spring Boot|독립형 프로덕션급 Spring 기반 애플리케이션을 구축하기 위한 Java Spring Boot Java 기반 프레임워크|[Spring Boot](https://spring.io/projects/spring-boot)|
+||Struts|엔터프라이즈급 Java 웹 애플리케이션을 제작하기 위한 오픈 소스 프레임워크|[Struts](https://struts.apache.org/)|
+|**Ruby**|Ruby on Rails|구성보다 규칙을 강조하는 Ruby on Rails Ruby 프레임워크|[Ruby on Rails](https://rubyonrails.org/)|
+||Sinatra|Ruby로 웹 애플리케이션을 빠르게 제작하기 위한 Sinatra DSL|[Sinatra](http://sinatrarb.com/)|
+|**.NET**|ASP.NET Core|클라우드 기반 인터넷 연결 애플리케이션을 빌드하기 위한 고성능 오픈 소스 프레임워크인 .NET ASP.NET Core 크로스 플랫폼|[.NET](https://dotnet.microsoft.com/apps/aspnet)|
+|**Go**|Gin|Go(Golang)로 작성된 Go Gin HTTP 웹 프레임워크|[Gin](https://github.com/gin-gonic/gin)|
+|**Node.js**|Koa|Node.js Koa 웹 애플리케이션 및 API를 구축하기 위한 표현력이 풍부하고 강력하며 유연한 프레임워크|[Koa](https://koajs.com/)|
+|**Rust**|Rocket|빠르고 안전한 웹 애플리케이션을 간편하게 작성할 수 있는 Rust용 Rust Rocket 웹 프레임워크|[Rocket](https://rocket.rs/)|
+|**Swift**|Vapor|Swift Vapor 웹 애플리케이션 구축을 위한 Swift 웹 프레임워크|[Vapor](https://vapor.codes/)|
+|**TypeScript**|NestJS|F효율적이고 확장 가능한 Node.js 서버 측 애플리케이션을 구축하기 위한 TypeScript NestJS 프레임워크|[NestJS](https://nestjs.com/)|
+|**C#**|ASP.NET MVC|웹 애플리케이션 구축을 위한 C# ASP.NET MVC 모델-뷰-컨트롤러 프레임워크|[.NET MVC](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/creating-a-new-project-in-an-existing-solution)|
+|**Scala**|Play|Scala Play Java 및 Scala용 고속 웹 프레임워크|[Play](https://www.playframework.com/)|
+|**Elixir**|Phoenix|고성능 웹 애플리케이션 구축을 위해 구축된 Elixir Phoenix 웹 프레임워크|[Phoenix](https://hexdocs.pm/phoenix/readme.html)|
+|**Kotlin**|Ktor|Kotlin을 사용하여 연결된 시스템에서 비동기 서버 및 클라이언트를 빌드하기 위한 Kotlin Ktor 프레임워크|[Ktor](https://ktor.io/)|
+|**Julia**|Genie.jl|웹 애플리케이션 빌드를 위한 Julia 패키지|[Genie.jl](https://genie.juliadata.org/)|
+|**R**|Shiny|대화형 웹 애플리케이션을 빌드하기 위한 R Shiny R 패키지|[Shiny](https://shiny.rstudio.com/)|
 
 <br>
 
