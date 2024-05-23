@@ -57,29 +57,29 @@ image:
 |주요 사용 언어|프레임워크 이름|설명|웹사이트|
 |---|---|---|---|
 |**JavaScript**|React|사용자 인터페이스, 특히 단일 페이지 애플리케이션을 구축하기 위한 자바스크립트 리액트 라이브러리 |[React](https://reactjs.org/)|
-||Angular|웹 애플리케이션 구축을 위한 Full-fledged framework|[Angular](https://angular.io/)|
-||Vue.js|사용자 인터페이스 구축을 위한 Progressive framework|[Vue.js](https://vuejs.org/)|
-||Express.js|최소한의 유연성을 강조 Node.js 웹 애플리케이션 프레임워크|[Express.js](http://expressjs.com/)|
-|**Python**|Django|빠른 개발과 깔끔하고 실용적인 디자인을 장려하는 Python 웹 풀스택 프레임워크|[Django](https://www.djangoproject.com/)|
-||Flask|Python으로 작성된 Flask Micro 웹 프레임워크|[Flask](https://flask.palletsprojects.com/en/2.0.x/)|
-|**PHP**|Laravel|PHP Laravel MVC 아키텍처 패턴을 따르는 PHP 프레임워크|[Laravel](https://laravel.com/)|
-||Symfony|웹 애플리케이션 및 서비스를 위한 Symfony PHP 프레임워크|[Symfony](https://symfony.com/)|
+||Angular|웹 애플리케이션 구축을 위한 Full-fledged framework|[Angular](https://angular.io)|
+||Vue.js|사용자 인터페이스 구축을 위한 Progressive framework|[Vue.js](https://vuejs.org)|
+||Express.js|최소한의 유연성을 강조 Node.js 웹 애플리케이션 프레임워크|[Express.js](http://expressjs.com)|
+|**Python**|Django|빠른 개발과 깔끔하고 실용적인 디자인을 장려하는 Python 웹 풀스택 프레임워크|[Django](https://www.djangoproject.com)|
+||Flask|Python으로 작성된 Flask Micro 웹 프레임워크|[Flask](https://flask.palletsprojects.com/en/2.0.x)|
+|**PHP**|Laravel|PHP Laravel MVC 아키텍처 패턴을 따르는 PHP 프레임워크|[Laravel](https://laravel.com)|
+||Symfony|웹 애플리케이션 및 서비스를 위한 Symfony PHP 프레임워크|[Symfony](https://symfony.com)|
 |**Java**|Spring Boot|독립형 프로덕션급 Spring 기반 애플리케이션을 구축하기 위한 Java Spring Boot Java 기반 프레임워크|[Spring Boot](https://spring.io/projects/spring-boot)|
-||Struts|엔터프라이즈급 Java 웹 애플리케이션을 제작하기 위한 오픈 소스 프레임워크|[Struts](https://struts.apache.org/)|
-|**Ruby**|Ruby on Rails|구성보다 규칙을 강조하는 Ruby on Rails Ruby 프레임워크|[Ruby on Rails](https://rubyonrails.org/)|
-||Sinatra|Ruby로 웹 애플리케이션을 빠르게 제작하기 위한 Sinatra DSL|[Sinatra](http://sinatrarb.com/)|
+||Struts|엔터프라이즈급 Java 웹 애플리케이션을 제작하기 위한 오픈 소스 프레임워크|[Struts](https://struts.apache.org)|
+|**Ruby**|Ruby on Rails|구성보다 규칙을 강조하는 Ruby on Rails Ruby 프레임워크|[Ruby on Rails](https://rubyonrails.org)|
+||Sinatra|Ruby로 웹 애플리케이션을 빠르게 제작하기 위한 Sinatra DSL|[Sinatra](http://sinatrarb.com)|
 |**.NET**|ASP.NET Core|클라우드 기반 인터넷 연결 애플리케이션을 빌드하기 위한 고성능 오픈 소스 프레임워크인 .NET ASP.NET Core 크로스 플랫폼|[.NET](https://dotnet.microsoft.com/apps/aspnet)|
 |**Go**|Gin|Go(Golang)로 작성된 Go Gin HTTP 웹 프레임워크|[Gin](https://github.com/gin-gonic/gin)|
-|**Node.js**|Koa|Node.js Koa 웹 애플리케이션 및 API를 구축하기 위한 표현력이 풍부하고 강력하며 유연한 프레임워크|[Koa](https://koajs.com/)|
-|**Rust**|Rocket|빠르고 안전한 웹 애플리케이션을 간편하게 작성할 수 있는 Rust용 Rust Rocket 웹 프레임워크|[Rocket](https://rocket.rs/)|
-|**Swift**|Vapor|Swift Vapor 웹 애플리케이션 구축을 위한 Swift 웹 프레임워크|[Vapor](https://vapor.codes/)|
-|**TypeScript**|NestJS|F효율적이고 확장 가능한 Node.js 서버 측 애플리케이션을 구축하기 위한 TypeScript NestJS 프레임워크|[NestJS](https://nestjs.com/)|
+|**Node.js**|Koa|Node.js Koa 웹 애플리케이션 및 API를 구축하기 위한 표현력이 풍부하고 강력하며 유연한 프레임워크|[Koa](https://koajs.com)|
+|**Rust**|Rocket|빠르고 안전한 웹 애플리케이션을 간편하게 작성할 수 있는 Rust용 Rust Rocket 웹 프레임워크|[Rocket](https://rocket.rs)|
+|**Swift**|Vapor|Swift Vapor 웹 애플리케이션 구축을 위한 Swift 웹 프레임워크|[Vapor](https://vapor.codes)|
+|**TypeScript**|NestJS|F효율적이고 확장 가능한 Node.js 서버 측 애플리케이션을 구축하기 위한 TypeScript NestJS 프레임워크|[NestJS](https://nestjs.com)|
 |**C#**|ASP.NET MVC|웹 애플리케이션 구축을 위한 C# ASP.NET MVC 모델-뷰-컨트롤러 프레임워크|[.NET MVC](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/creating-a-new-project-in-an-existing-solution)|
-|**Scala**|Play|Scala Play Java 및 Scala용 고속 웹 프레임워크|[Play](https://www.playframework.com/)|
+|**Scala**|Play|Scala Play Java 및 Scala용 고속 웹 프레임워크|[Play](https://www.playframework.com)|
 |**Elixir**|Phoenix|고성능 웹 애플리케이션 구축을 위해 구축된 Elixir Phoenix 웹 프레임워크|[Phoenix](https://hexdocs.pm/phoenix/readme.html)|
-|**Kotlin**|Ktor|Kotlin을 사용하여 연결된 시스템에서 비동기 서버 및 클라이언트를 빌드하기 위한 Kotlin Ktor 프레임워크|[Ktor](https://ktor.io/)|
-|**Julia**|Genie.jl|웹 애플리케이션 빌드를 위한 Julia 패키지|[Genie.jl](https://genie.juliadata.org/)|
-|**R**|Shiny|대화형 웹 애플리케이션을 빌드하기 위한 R Shiny R 패키지|[Shiny](https://shiny.rstudio.com/)|
+|**Kotlin**|Ktor|Kotlin을 사용하여 연결된 시스템에서 비동기 서버 및 클라이언트를 빌드하기 위한 Kotlin Ktor 프레임워크|[Ktor](https://ktor.io)|
+|**Julia**|Genie.jl|웹 애플리케이션 빌드를 위한 Julia 패키지|[Genie.jl](https://genie.juliadata.org)|
+|**R**|Shiny|대화형 웹 애플리케이션을 빌드하기 위한 R Shiny R 패키지|[Shiny](https://shiny.rstudio.com)|
 
 <br>
 
