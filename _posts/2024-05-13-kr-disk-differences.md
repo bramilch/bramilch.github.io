@@ -6,7 +6,7 @@ date: 2024-05-13 18:00:00 +0900
 categories: [Backend, Data Engineering]
 tags: [Backend, Data Engineering]
 pin: true
-math: true
+math: false
 toc: true
 comments: false
 mermaid:
