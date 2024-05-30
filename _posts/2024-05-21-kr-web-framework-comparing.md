@@ -21,7 +21,10 @@ image:
 > 2024/05/24: Spring, Django, Flask 비교 추가
 > 2024/05/26: 웹 프레임워크 선택 기준, 구체적인 웹 프레임워크들 장단점 추가, 보완
 > 2024/05/27: Spring과 Spring Boot 비교 추가
+> 2024/05/27: Spring과 Spring Boot 문장 수정, 보완
 
+ <br>
+ 
 ※ 내용에 오류가 있을 수 있습니다.  
 ※ 내용을 계속 추가, 수정, 보완하고 있습니다.  
 
@@ -30,10 +33,26 @@ image:
 **목차**
 
 - [머리말](#머리말)
+- [스프링 Spring, 장고 Django, 플라스크 Flask 비교](#스프링-spring-장고-django-플라스크-flask-비교)
 - [웹 프레임워크 선택의 문제](#웹-프레임워크-선택의-문제)
 - [프론트엔드 웹 프레임워크 Front-End Web Frameworks](#프론트엔드-웹-프레임워크-front-end-web-frameworks)
 - [백엔드 웹 프레임워크 Back-End Web Frameworks](#백엔드-웹-프레임워크-back-end-web-frameworks)
 - [풀스택 웹 프레임워크 Full-Stack Web Frameworks](#풀스택-웹-프레임워크-full-stack-web-frameworks)
+- [Spring과 Spring Boot 비교와 선택](#spring과-spring-boot-비교와-선택)
+  - [Spring 프레임워크](#spring-프레임워크)
+  - [Spring Boot 프레임워크](#spring-boot-프레임워크)
+- [구체적인 웹 개발 프레임워크들의 장단점](#구체적인-웹-개발-프레임워크들의-장단점)
+  - [1. Django (Python)](#1-django-python)
+  - [2. Flask (Python)](#2-flask-python)
+  - [3. Spring (Java)](#3-spring-java)
+  - [4. Express.js (JavaScript)](#4-expressjs-javascript)
+  - [5. Ruby on Rails (Ruby)](#5-ruby-on-rails-ruby)
+  - [6. Laravel (PHP)](#6-laravel-php)
+  - [7. ASP.NET Core (C#)](#7-aspnet-core-c)
+  - [8. Vue.js/Nuxt.js (JavaScript)](#8-vuejsnuxtjs-javascript)
+  - [9. React.js/Next.js (JavaScript)](#9-reactjsnextjs-javascript)
+  - [10. Angular (JavaScript/TypeScript)](#10-angular-javascripttypescript)
+- [참고자료](#참고자료)
 
 <br>
 
@@ -73,7 +92,7 @@ image:
 
 <br>
 
-<details><summary> 웹에서 Robust란 의미 </summary><div markdown="1">
+<details><summary> 웹에서 Robust란</summary><div markdown="1">
 
 <br>  
 
@@ -93,7 +112,6 @@ from Google Dictionary
 > by [문화체육관광부 국립장애인도서관 (웹 및 모바일) 접근성](https://www.nld.go.kr/ableFront/new_standard_guide/accessibility.jsp)
 
 </div></details>
-
 
 
 <br>
@@ -120,43 +138,11 @@ from Google Dictionary
 |단점|가파른 학습 곡선|대규모 앱의 경우 속도가 느릴 수 있음|대규모 모놀리식 앱에는 적합하지 않음|
 ||더 복잡한 설정|Flask보다 유연성이 떨어짐|기본 제공 기능이 적음|
 
-
-<br>
-
-<center><span style="font-size:1.2em;">언어별 웹 프레임워크 정리</span></center>
-
-<br>
-
-|주요 사용 언어|프레임워크 이름|설명|
-|---|---|---|---|
-|**JavaScript**|React|사용자 인터페이스, 특히 단일 페이지 애플리케이션을 구축하기 위한 자바스크립트 리액트 라이브러리|
-||Angular|웹 애플리케이션 구축을 위한 Full-fledged framework|
-||Vue.js|사용자 인터페이스 구축을 위한 Progressive framework|
-||Express.js|최소한의 유연성을 강조 Node.js 웹 애플리케이션 프레임워크|
-|**Python**|Django|빠른 개발과 깔끔하고 실용적인 디자인을 장려하는 Python 웹 풀스택 프레임워크|
-||Flask|Python으로 작성된 Flask Micro 웹 프레임워크|
-|**PHP**|Laravel|PHP Laravel MVC 아키텍처 패턴을 따르는 PHP 프레임워크|
-||Symfony|웹 애플리케이션 및 서비스를 위한 Symfony PHP 프레임워크|
-|**Java**|Spring Boot|독립형 프로덕션급 Spring 기반 애플리케이션을 구축하기 위한 Java Spring Boot Java 기반 프레임워크|
-||Struts|엔터프라이즈급 Java 웹 애플리케이션을 제작하기 위한 오픈 소스 프레임워크|
-|**Ruby**|Ruby on Rails|구성보다 규칙을 강조하는 Ruby on Rails Ruby 프레임워크|
-||Sinatra|Ruby로 웹 애플리케이션을 빠르게 제작하기 위한 Sinatra DSL|
-|**.NET**|ASP.NET Core|클라우드 기반 인터넷 연결 애플리케이션을 빌드하기 위한 고성능 오픈 소스 프레임워크인 .NET ASP.NET Core 크로스 플랫폼|
-|**Go**|Gin|Go(Golang)로 작성된 Go Gin HTTP 웹 프레임워크|
-|**Node.js**|Koa|Node.js Koa 웹 애플리케이션 및 API를 구축하기 위한 표현력이 풍부하고 강력하며 유연한 프레임워크|
-|**Rust**|Rocket|빠르고 안전한 웹 애플리케이션을 간편하게 작성할 수 있는 Rust용 Rust Rocket 웹 프레임워크|
-|**Swift**|Vapor|Swift Vapor 웹 애플리케이션 구축을 위한 Swift 웹 프레임워크|
-|**TypeScript**|NestJS|F효율적이고 확장 가능한 Node.js 서버 측 애플리케이션을 구축하기 위한 TypeScript NestJS 프레임워크|
-|**C#**|ASP.NET MVC|웹 애플리케이션 구축을 위한 C# ASP.NET MVC 모델-뷰-컨트롤러 프레임워크|
-|**Scala**|Play|Scala Play Java 및 Scala용 고속 웹 프레임워크|
-|**Elixir**|Phoenix|고성능 웹 애플리케이션 구축을 위해 구축된 Elixir Phoenix 웹 프레임워크|
-|**Kotlin**|Ktor|Kotlin을 사용하여 연결된 시스템에서 비동기 서버 및 클라이언트를 빌드하기 위한 Kotlin Ktor 프레임워크|
-|**Julia**|Genie.jl|웹 애플리케이션 빌드를 위한 Julia 패키지|
-|**R**|Shiny|대화형 웹 애플리케이션을 빌드하기 위한 R Shiny R 패키지|
-
 <br>
 
 ## 웹 프레임워크 선택의 문제
+
+<br>
 
 - 프론트엔드, 백엔드, 풀스택 프레임워크 중 어떤 것을 선택할지는 ***프로젝트의 구체적인 요구 사항(필요 기술, 확장성과 연관)***, 팀의 전문성(개발 역량, 주어진 리소스와 제한된 시간 등), 애플리케이션의 장기적인 목표(확장성과도 연관)에 따라 달라짐. 
 
@@ -225,9 +211,11 @@ from Google Dictionary
 
 - 다양성 및 효율성: 풀스택 개발은 개발 프로세스를 간소화하고 효율성을 높일 수 있다는 점에서 높은 평가를 받고 있음. 이를 통해 개발자는 프레젠테이션 계층과 기본 로직을 모두 이해하고 작업할 수 있으므로 애플리케이션을 전체적으로 파악할 수 있음.
 
+<br>
 
 ## Spring과 Spring Boot 비교와 선택
 
+<br>
 
 **프로젝트의 요구 사항, 기존 인프라 및 개발 목표에 따라 선택**
 
@@ -256,43 +244,91 @@ from Google Dictionary
 
 <br>
 
-**Spring 프레임워크**
+### Spring 프레임워크
 
-- Spring 프레임워크는 엔터프라이즈 Java 개발을 위한 포괄적인 프레임워크입니다. 다양한 기능을 제공하며 대규모 애플리케이션 개발을 지원하는 기능으로 잘 알려져 있습니다. 
-
-주요 기능
-
-- 의존성 주입(DI, Dependency Injection): Spring의 핵심으로, 종속성을 관리하여 구성 요소 간의 느슨한 결합을 가능하게 하고 테스트 및 유지 관리를 용이하게 합니다.
-
-- 특 지향 프로그래밍(AOP, Aspect-Oriented Programming): 로깅 및 트랜잭션 관리와 같은 교차적인 문제를 비즈니스 로직에서 분리할 수 있습니다.
-
-- 데이터 액세스: 데이터 액세스를 간소화할 수 있도록 JDBC, ORM 도구, NoSQL 데이터베이스와의 통합을 위한 템플릿을 제공합니다.
-
-- 트랜잭션 관리: 트랜잭션 관리를 위한 일관된 프로그래밍 모델을 제공합니다.
-
-- Web MVC: 모델-뷰-컨트롤러 아키텍처로 웹 애플리케이션을 구축하기 위한 강력한 프레임워크입니다.
-
-- 보안: 인증 및 권한 부여를 포함한 Java 애플리케이션을 위한 포괄적인 보안 서비스.
-
-**Spring Boot**
-
-- Spring Boot는 Spring 프레임워크 위에 구축되었습니다. 새로운 Spring 애플리케이션의 설정과 개발을 간소화하도록 설계되어 Spring으로 더 쉽게 접근하고 더 빠르게 개발할 수 있습니다. 
+- Spring 프레임워크는 엔터프라이즈 Java 개발을 위한 포괄적인 프레임워크. 다양한 기능을 제공하며 대규모 애플리케이션 개발을 지원하는 기능으로 잘 알려져 있음.
 
 주요 기능
 
-- 구성에 대한 규칙(Convention over Configuration): 보일러플레이트 코드  boilerplate code를 최소화하기 위해 합리적인 기본값과 구성을 제공합니다.
+- ***의존성 주입(DI, Dependency Injection)***: Spring의 핵심으로, 종속성을 관리하여 구성 요소 간의 느슨한 결합을 가능하게 하고 테스트 및 유지 관리를 용이하게 함.
 
-- 임베디드 서버(Embedded Servers): 임베디드 서버: 외부 서버 없이도 웹 애플리케이션을 실행할 수 있는 임베디드 Tomcat, Jetty 또는 Undertow 서버가 함께 제공됩니다.
+- ***특징 지향 프로그래밍(AOP, Aspect-Oriented Programming)***: 로깅 및 트랜잭션 관리와 같은 교차적인 문제를 비즈니스 로직에서 분리할 수 있음.
 
-- 스타터 POM (Starter POMs): 다양한 유형의 애플리케이션에 대한 공통 종속성을 포함하는 스타터 POM을 제공하여 종속성 관리를 간소화합니다.
+- 데이터 액세스: 데이터 액세스를 간소화할 수 있도록 JDBC, ORM 도구, NoSQL 데이터베이스와의 통합을 위한 템플릿을 제공
 
-- 프로덕션 준비 기능(Production-Ready Features): 메트릭, 상태 확인 및 외부화된 구성과 같은 기능이 기본으로 포함되어 있습니다.
+- 트랜잭션 관리: 트랜잭션 관리를 위한 일관된 프로그래밍 모델을 제공
 
-- 자동 구성(Auto-Configuration): 클래스 경로에 존재하는 종속성을 기반으로 Spring 애플리케이션을 자동으로 구성합니다.
+- ***Web MVC***: 모델-뷰-컨트롤러 아키텍처(Model-View-Controller Architecture)로 웹 애플리케이션을 구축하기 위한 robust 프레임워크
+
+- 보안: 인증 및 권한 부여를 포함한 Java 애플리케이션을 위한 포괄적인 보안 서비스
+
+### Spring Boot 프레임워크
+
+- Spring Boot는 Spring 프레임워크 위에 구축됨. 새로운 Spring 애플리케이션의 설정과 개발을 간소화하도록 설계되어 Spring으로 더 쉽게 접근하고 더 빠르게 개발할 수 있음.
+
+주요 기능
+
+- 구성에 대한 규칙(Convention over Configuration): 보일러플레이트 코드  boilerplate code를 최소화하기 위해 기본값과 구성을 제공
+
+<br>
+
+<details><summary>보일러플레이트 코드 boilerplate code란</summary><div markdown="1">
+
+<br>  
+
+- 컴퓨터 프로그래밍에서 상용구 코드 boilerplate code 또는 보일러플레이트 boilerplate는 ***변형이 거의 또는 전혀 없이 여러 곳에서 반복되는 코드 섹션***을 의미함.
+
+- 보일러플레이트 코드  boilerplate code 어원은 1800년대 증기 보일러를 만드는 데 사용하기 위해 크고 평평한 판으로 말린 철 → ***"변경 없이 반복해서 사용할 수 있는 글의 단위"***로 의미가 변화함.
+
+- 광고나 신문의 칼럼 등 준비된 텍스트를 금속 인쇄판(활자 금속)이 소규모 지역 신문사에 배포되면서 비유적으로 '보일러 플레이트'로 알려지게 됨.
+
+</details></summary>
+
+
+- 임베디드 서버(Embedded Servers): 외부 서버 없이도 웹 애플리케이션을 실행할 수 있는 임베디드 Tomcat, Jetty 또는 Undertow 서버가 함께 제공
+
+- 스타터 POM (Starter POMs (Project Object Models)): 다양한 유형의 애플리케이션에 대한 공통 종속성을 포함하는 스타터 POM을 제공하여 종속성 관리를 간소화(편하게 애플리케이션에 포함시킬 수 있는 dependency descriptors 집)
+
+- 프로덕션 준비 기능(Production-Ready Features): 메트릭, 상태 확인 health checks 및 외부화된 구성과 같은 기능이 기본으로 포함
+
+- 자동 구성(Auto-Configuration): 클래스 경로에 존재하는 종속성을 기반으로 Spring 애플리케이션을 자동으로 구성
 
 <br>
 
 ## 구체적인 웹 개발 프레임워크들의 장단점
+
+<br>
+
+<center><span style="font-size:1.2em;">언어별 웹 프레임워크 정리</span></center>
+
+<br>
+
+|주요 사용 언어|프레임워크 이름|설명|
+|---|---|---|---|
+|**JavaScript**|React|사용자 인터페이스, 특히 단일 페이지 애플리케이션을 구축하기 위한 자바스크립트 리액트 라이브러리|
+||Angular|웹 애플리케이션 구축을 위한 Full-fledged framework|
+||Vue.js|사용자 인터페이스 구축을 위한 Progressive framework|
+||Express.js|최소한의 유연성을 강조 Node.js 웹 애플리케이션 프레임워크|
+|**Python**|Django|빠른 개발과 깔끔하고 실용적인 디자인을 장려하는 Python 웹 풀스택 프레임워크|
+||Flask|Python으로 작성된 Flask Micro 웹 프레임워크|
+|**PHP**|Laravel|PHP Laravel MVC 아키텍처 패턴을 따르는 PHP 프레임워크|
+||Symfony|웹 애플리케이션 및 서비스를 위한 Symfony PHP 프레임워크|
+|**Java**|Spring Boot|독립형 프로덕션급 Spring 기반 애플리케이션을 구축하기 위한 Java Spring Boot Java 기반 프레임워크|
+||Struts|엔터프라이즈급 Java 웹 애플리케이션을 제작하기 위한 오픈 소스 프레임워크|
+|**Ruby**|Ruby on Rails|구성보다 규칙을 강조하는 Ruby on Rails Ruby 프레임워크|
+||Sinatra|Ruby로 웹 애플리케이션을 빠르게 제작하기 위한 Sinatra DSL|
+|**.NET**|ASP.NET Core|클라우드 기반 인터넷 연결 애플리케이션을 빌드하기 위한 고성능 오픈 소스 프레임워크인 .NET ASP.NET Core 크로스 플랫폼|
+|**Go**|Gin|Go(Golang)로 작성된 Go Gin HTTP 웹 프레임워크|
+|**Node.js**|Koa|Node.js Koa 웹 애플리케이션 및 API를 구축하기 위한 표현력이 풍부하고 강력하며 유연한 프레임워크|
+|**Rust**|Rocket|빠르고 안전한 웹 애플리케이션을 간편하게 작성할 수 있는 Rust용 Rust Rocket 웹 프레임워크|
+|**Swift**|Vapor|Swift Vapor 웹 애플리케이션 구축을 위한 Swift 웹 프레임워크|
+|**TypeScript**|NestJS|F효율적이고 확장 가능한 Node.js 서버 측 애플리케이션을 구축하기 위한 TypeScript NestJS 프레임워크|
+|**C#**|ASP.NET MVC|웹 애플리케이션 구축을 위한 C# ASP.NET MVC 모델-뷰-컨트롤러 프레임워크|
+|**Scala**|Play|Scala Play Java 및 Scala용 고속 웹 프레임워크|
+|**Elixir**|Phoenix|고성능 웹 애플리케이션 구축을 위해 구축된 Elixir Phoenix 웹 프레임워크|
+|**Kotlin**|Ktor|Kotlin을 사용하여 연결된 시스템에서 비동기 서버 및 클라이언트를 빌드하기 위한 Kotlin Ktor 프레임워크|
+|**Julia**|Genie.jl|웹 애플리케이션 빌드를 위한 Julia 패키지|
+|**R**|Shiny|대화형 웹 애플리케이션을 빌드하기 위한 R Shiny R 패키지|
 
 <br>
 
@@ -307,7 +343,6 @@ from Google Dictionary
 8. **Vue.js/Nuxt.js (JavaScript)**
 9. **React.js/Next.js (JavaScript)**
 10. **Angular (JavaScript/TypeScript)**
-
 -----
 
 <br>
@@ -491,5 +526,6 @@ from Google Dictionary
 
 ## 참고자료
 
-- [문화체육관광부 국립장애인도서관 (웹 및 모바일) 접근성]<https://www.nld.go.kr/ableFront/new_standard_guide/accessibility.jsp>
--  [WCAG 2.1 Principles Explained: Robustness]<https://www.boia.org/blog/wcag-2.1-principles-explained-robustness#:~:text=Robustness%2C%20as%20defined%20by%20WCAG,means%20of%20accessing%20web%20content>
+- [문화체육관광부 국립장애인도서관 (웹 및 모바일) 접근성]  <https://www.nld.go.kr/ableFront/new_standard_guide/accessibility.jsp>
+-  [WCAG 2.1 Principles Explained: Robustness]  <https://www.boia.org/blog/wcag-2.1-principles-explained-robustness#:~:text=Robustness%2C%20as%20defined%20by%20WCAG,means%20of%20accessing%20web%20content>
+- [Online Etymology Dictionary] boilerplate (n.)  <https://www.etymonline.com/word/boilerplate>
