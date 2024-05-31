@@ -21,7 +21,8 @@ image:
 > 2024/05/24: Spring, Django, Flask 비교 추가
 > 2024/05/26: 웹 프레임워크 선택 기준, 구체적인 웹 프레임워크들 장단점 추가, 보완
 > 2024/05/27: Spring과 Spring Boot 비교 추가
-> 2024/05/27: Spring과 Spring Boot 문장 수정, 보완
+> 2024/05/28: Spring과 Spring Boot 문장 수정, 보완
+> 2024/05/29: Spring과 Spring Boot 특징 보완
 
  <br>
  
@@ -248,7 +249,7 @@ from Google Dictionary
 
 - Spring 프레임워크는 엔터프라이즈 Java 개발을 위한 포괄적인 프레임워크. 다양한 기능을 제공하며 대규모 애플리케이션 개발을 지원하는 기능으로 잘 알려져 있음.
 
-주요 기능
+**주요 기능**
 
 - ***의존성 주입(DI, Dependency Injection)***: Spring의 핵심으로, 종속성을 관리하여 구성 요소 간의 느슨한 결합을 가능하게 하고 테스트 및 유지 관리를 용이하게 함.
 
@@ -262,28 +263,40 @@ from Google Dictionary
 
 - 보안: 인증 및 권한 부여를 포함한 Java 애플리케이션을 위한 포괄적인 보안 서비스
 
+<br>
+
+**특징**
+
+<br>
+
+- 유연성: Spring 프레임워크는 매우 유연하여 개발자가 고도로 맞춤화된 애플리케이션을 만들 수 있음. XML, 어노테이션, Java 기반 구성을 비롯한 다양한 구성을 지원
+
+- 학습 곡선: 포괄적인 특성으로 인해 학습 곡선이 가파름. 개발자는 다양한 구성 요소와 그 상호 작용 방식을 이해해야 함.
+
+- 수동 구성: 상당한 구성이 필요하며, 특히 초보자에게는 지루하고 오류가 발생하기 쉬움.
+
+- 대규모 애플리케이션에 적합합: 구성 및 동작을 세밀하게 제어해야 하는 대규모의 복잡한 애플리케이션에 이상적
+
+<br>
+
 ### Spring Boot 프레임워크
 
 - Spring Boot는 Spring 프레임워크 위에 구축됨. 새로운 Spring 애플리케이션의 설정과 개발을 간소화하도록 설계되어 Spring으로 더 쉽게 접근하고 더 빠르게 개발할 수 있음.
 
-주요 기능
+<br>
+
+**주요 기능**
 
 - 구성에 대한 규칙(Convention over Configuration): 보일러플레이트 코드  boilerplate code를 최소화하기 위해 기본값과 구성을 제공
 
-<br>
+-------
 
-<details><summary>보일러플레이트 코드 boilerplate code란</summary><div markdown="1">
+> 보일러플레이트 코드 boilerplate code란
+> 컴퓨터 프로그래밍에서 상용구 코드 boilerplate code 또는 보일러플레이트 boilerplate는 ***변형이 거의 또는 전혀 없이 여러 곳에서 반복되는 코드 섹션***을 의미함.
+> 보일러플레이트 코드  boilerplate code 어원은 1800년대 증기 보일러를 만드는 데 사용하기 위해 크고 평평한 판으로 말린 철 → ***"변경 없이 반복해서 사용할 수 있는 글의 단위"***로 의미가 변화함.
+> 광고나 신문의 칼럼 등 준비된 텍스트를 금속 인쇄판(활자 금속)이 소규모 지역 신문사에 배포되면서 비유적으로 '보일러 플레이트'로 알려지게 됨.
 
-<br>  
-
-- 컴퓨터 프로그래밍에서 상용구 코드 boilerplate code 또는 보일러플레이트 boilerplate는 ***변형이 거의 또는 전혀 없이 여러 곳에서 반복되는 코드 섹션***을 의미함.
-
-- 보일러플레이트 코드  boilerplate code 어원은 1800년대 증기 보일러를 만드는 데 사용하기 위해 크고 평평한 판으로 말린 철 → ***"변경 없이 반복해서 사용할 수 있는 글의 단위"***로 의미가 변화함.
-
-- 광고나 신문의 칼럼 등 준비된 텍스트를 금속 인쇄판(활자 금속)이 소규모 지역 신문사에 배포되면서 비유적으로 '보일러 플레이트'로 알려지게 됨.
-
-</details></summary>
-
+-------
 
 - 임베디드 서버(Embedded Servers): 외부 서버 없이도 웹 애플리케이션을 실행할 수 있는 임베디드 Tomcat, Jetty 또는 Undertow 서버가 함께 제공
 
@@ -292,6 +305,22 @@ from Google Dictionary
 - 프로덕션 준비 기능(Production-Ready Features): 메트릭, 상태 확인 health checks 및 외부화된 구성과 같은 기능이 기본으로 포함
 
 - 자동 구성(Auto-Configuration): 클래스 경로에 존재하는 종속성을 기반으로 Spring 애플리케이션을 자동으로 구성
+
+<br>
+
+**특징**
+
+- 사용 편의성: 광범위한 구성의 필요성을 줄여 개발 프로세스를 간소화함. 규칙과 합리적인 기본값을 사용하여 프로젝트를 빠르게 시작하고 실행할 수 있음.
+
+- 임베디드 서버: 개발자가 애플리케이션을 임베디드 서버가 포함된 독립형 JAR로 패키징할 수 있어 배포를 간소화하고 외부 서버의 필요성을 줄일 수 있음.
+
+- 스타터 종속성 Starter Dependencies: 다양한 유형의 애플리케이션에 대한 공통 종속성을 번들로 묶은 스타터 POM starter POMs 세트를 제공하여 종속성 관리가 더 쉬워집니다.
+
+- 자동 구성 Auto-Configuration: 포함된 종속성을 기반으로 애플리케이션을 자동으로 구성하여 상용구 코드 및 구성을 줄임.
+
+- 마이크로서비스 및 클라우드 Microservices and Cloud: 마이크로서비스를 구축하는 데 적합. 클라우드 네이티브 애플리케이션 cloud-native applications을 구축하기 위해 Spring Cloud와 원활하게 통합됨.
+
+- 마이크로서비스, RESTful API 및 신속한 프로토타이핑 개발에 적합: 빠른 설정과 사용 편의성으로 인해 마이크로서비스, RESTful API 및 신속한 프로토타이핑 개발에 이상적
 
 <br>
 
@@ -332,8 +361,9 @@ from Google Dictionary
 
 <br>
 
------
-1. **Django (Python)**
+---------
+
+> 1. **Django (Python)**
 2. **Flask (Python)**
 3. **Spring (Java)**
 4. **Express.js (JavaScript)**
@@ -342,10 +372,9 @@ from Google Dictionary
 7. **ASP.NET Core (C#)**
 8. **Vue.js/Nuxt.js (JavaScript)**
 9. **React.js/Next.js (JavaScript)**
-10. **Angular (JavaScript/TypeScript)**
------
+> 10. **Angular (JavaScript/TypeScript)**
 
-<br>
+---------
 
 ### 1. Django (Python)
 
@@ -526,6 +555,11 @@ from Google Dictionary
 
 ## 참고자료
 
-- [문화체육관광부 국립장애인도서관 (웹 및 모바일) 접근성]  <https://www.nld.go.kr/ableFront/new_standard_guide/accessibility.jsp>
--  [WCAG 2.1 Principles Explained: Robustness]  <https://www.boia.org/blog/wcag-2.1-principles-explained-robustness#:~:text=Robustness%2C%20as%20defined%20by%20WCAG,means%20of%20accessing%20web%20content>
-- [Online Etymology Dictionary] boilerplate (n.)  <https://www.etymonline.com/word/boilerplate>
+[문화체육관광부] 국립장애인도서관 (웹 및 모바일) 접근성  
+<https://www.nld.go.kr/ableFront/new_standard_guide/accessibility.jsp>
+
+WCAG 2.1 Principles Explained: Robustness  
+<https://www.boia.org/blog/wcag-2.1-principles-explained-robustness#:~:text=Robustness%2C%20as%20defined%20by%20WCAG,means%20of%20accessing%20web%20content>
+
+[Online Etymology Dictionary] boilerplate (n.)  
+<https://www.etymonline.com/word/boilerplate>

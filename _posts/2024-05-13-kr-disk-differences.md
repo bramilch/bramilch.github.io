@@ -138,15 +138,14 @@ image:
 
 ## 참고자료
 
-[Wikipedia] Hard disk drive
+[Wikipedia] Hard disk drive  
 <https://en.wikipedia.org/wiki/Hard_disk_drive>
 
-[Wikipedia] Solid-state drive
+[Wikipedia] Solid-state drive  
 <https://en.wikipedia.org/wiki/Solid-state_drive>
 
-[Wikipedia] Hybrid drive
+[Wikipedia] Hybrid drive  
 <https://en.wikipedia.org/wiki/Hybrid_drive>
 
-[Wikipedia] Optical disc
+[Wikipedia] Optical disc  
 <https://en.wikipedia.org/wiki/Optical_disc>
-
