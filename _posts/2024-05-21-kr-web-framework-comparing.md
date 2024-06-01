@@ -18,11 +18,11 @@ image:
 
 > 2024/05/21: 초안 작성  
 > 2024/05/23: 각 언어별 웹프레임워크 테이블 추가  
-> 2024/05/24: Spring, Django, Flask 비교 추가
-> 2024/05/26: 웹 프레임워크 선택 기준, 구체적인 웹 프레임워크들 장단점 추가, 보완
-> 2024/05/27: Spring과 Spring Boot 비교 추가
-> 2024/05/28: Spring과 Spring Boot 문장 수정, 보완
-> 2024/05/29: Spring과 Spring Boot 특징 보완
+> 2024/05/24: Spring, Django, Flask 비교 추가  
+> 2024/05/26: 웹 프레임워크 선택 기준, 구체적인 웹 프레임워크들 장단점 추가, 보완  
+> 2024/05/27: Spring과 Spring Boot 비교 추가  
+> 2024/05/28: Spring과 Spring Boot 문장 수정, 보완  
+> 2024/05/29: Spring과 Spring Boot 특징 보완  
 
  <br>
  
