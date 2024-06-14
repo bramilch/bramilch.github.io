@@ -2,7 +2,7 @@
 layout: post
 title: 유저 모드 User mode vs 커널 모드 Kernel mode
 author: bramilch
-date: 2024-05-27 18:00:00 +0900
+date: 2024-06-07 18:00:00 +0900
 categories: [Backend, Data Engineering]
 tags: [Backend, Data Engineering]
 pin: true
