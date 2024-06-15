@@ -57,8 +57,10 @@ mermaid: false
 
 - 파이썬의 디자인 패턴은 크게 세 가지 유형으로 분류. 
 
-> ***생성 패턴 Creational Patterns***
+***생성 패턴 Creational Patterns***
+
 ***구조 패턴 Structural Patterns***
+
 ***행동 패턴 Behavioral Patterns***
 
 - 각 디자인 패턴은 특정 측면을 어떻게 다루느냐에 따라 구분
@@ -145,5 +147,5 @@ mermaid: false
 
 [참고자료]
 
-[GeeksforGeeks] Python Design Patterns
+[GeeksforGeeks] Python Design Patterns  
 <https://www.geeksforgeeks.org/python-design-patterns/>
