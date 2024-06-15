@@ -28,15 +28,14 @@ image:
 
 **목차**
 
-- [[#커널 모드와 유저 모드|커널 모드와 유저 모드]]
-- [[#커널 모드와 유저 모드 특징|커널 모드와 유저 모드 특징]]
-	- [[#커널 모드와 유저 모드 특징#커널 모드 Kernel Mode 특징|커널 모드 Kernel Mode 특징]]
-	- [[#커널 모드와 유저 모드 특징#유저 모드 User Mode 특징|유저 모드 User Mode 특징]]
-- [[#3가지 커널 모드|3가지 커널 모드]]
-	- [[#3가지 커널 모드#1. Monolithic Kernel|1. Monolithic Kernel]]
-	- [[#3가지 커널 모드#2. Microkernels (or Samuel Kernel)|2. Microkernels (or Samuel Kernel)]]
-	- [[#3가지 커널 모드#3. Hybrid Kernel|3. Hybrid Kernel]]
-
+- [커널 모드와 유저 모드](#커널-모드와-유저-모드)
+- [커널 모드와 유저 모드 특징](#커널-모드와-유저-모드-특징)
+	- [커널 모드 Kernel Mode 특징](#커널-모드-kernel-mode-특징)
+	- [유저 모드 User Mode 특징](#유저-모드-user-mode-특징)
+- [커널 모드의 3가지 유형](#커널-모드의-3가지-유형)
+	- [1. 모놀리식 커널 Monolithic Kernel](#1-모놀리식-커널-monolithic-kernel)
+	- [2. 마이크로커널(새뮤엘 커널) Microkernel (or Samuel Kernel)](#2-마이크로커널새뮤엘-커널-microkernel-or-samuel-kernel)
+	- [3. 하이브리드 커널 Hybrid Kernel](#3-하이브리드-커널-hybrid-kernel)
 
 <br>
 
