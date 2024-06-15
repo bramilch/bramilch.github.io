@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 파이썬 디자인 패턴과 디펜던시 인젝션 패턴 Dependency Injection 패턴
+title: 파이썬 디자인 패턴과 디펜던시 인젝션 패턴 Dependency Injection Pattern
 author: bramilch
 date: 2024-06-14 18:00:00 +0900
 categories: [Backend, Data Engineering]
