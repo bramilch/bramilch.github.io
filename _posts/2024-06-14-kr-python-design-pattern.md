@@ -16,6 +16,7 @@ mermaid: false
 
 > 2024/06/14: 초안 작성  
 > 2024/06/25: 비교 테이블 보완, 머리말의 디자인 패턴 적용, 코드 리팩토링 관련 수정  
+> 2024/06/30: 의존성 주입 패턴 추가가  
 
 ※ 내용에 오류가 있을 수 있습니다.  
 ※ 내용을 계속 추가, 수정, 보완하고 있습니다.  
@@ -29,6 +30,9 @@ mermaid: false
   - [생성 패턴 Creational Patterns](#생성-패턴-creational-patterns)
   - [구조 패턴 Structural Patterns](#구조-패턴-structural-patterns)
   - [행동 패턴 Behavioral Patterns](#행동-패턴-behavioral-patterns)
+- [의존성 주입 패턴 DI (Dependency Injection) Pattern](#의존성-주입-패턴-di-dependency-injection-pattern)
+  - [Python 구현 예제](#python-구현-예제)
+
 
 <br>
 
@@ -175,6 +179,79 @@ mermaid: false
 |동작|전략 Strategy|알고리즘들을 정의하고, 각 알고리즘을 캡슐화하여 상호 교환 가능하게 함.|
 |동작|템플릿 메서드 Template Method|연산에서 알고리즘의 골격을 정의하여 일부 단계를 하위 클래스에서 다루도록 함.|
 |동작|방문자 Visitor|객체 구조의 요소들에 대해 수행될 연산을 나타냄.|
+
+<br>
+
+## 의존성 주입 패턴 DI (Dependency Injection) Pattern
+
+<br>
+
+종속성 주입(DI)은 클래스와 해당 종속성 간에 제어의 역전(IoC)을 달성하는 데 사용되는 디자인 패턴입니다. 클래스 내에서 종속성을 생성하는 대신 일반적으로 생성자, 설정자 또는 인터페이스를 통해 외부 소스에서 클래스에 종속성을 주입합니다. 이렇게 하면 느슨한 결합, 더 쉬운 테스트 및 더 나은 유지 관리가 가능합니다.
+
+주요 개념
+제어의 역전(IoC): 종속성을 생성하고 관리하는 제어권이 종속 클래스에서 외부 프레임워크 또는 컨테이너로 반전됩니다.
+종속성 주입(DI): 클래스에서 종속성을 생성하는 대신 종속성을 클래스에 제공하는 IoC를 구현하는 방법.
+의존성 주입의 유형
+생성자 주입: 클래스 생성자를 통해 종속성을 제공합니다.
+세터 주입: 세터 메서드를 통해 종속성을 제공합니다.
+인터페이스 주입: 종속성은 인터페이스를 통해 제공됩니다(파이썬에서는 덜 일반적임).
+종속성 주입의 이점
+느슨한 결합: 클래스가 종속성에 단단히 묶여 있지 않으므로 시스템이 더 모듈화됩니다.
+테스트의 용이성: 단위 테스트 중에 종속성을 쉽게 모킹하거나 스텁할 수 있습니다.
+유연성 및 재사용성: 구성 요소는 다양한 구성과 종속성으로 재사용할 수 있습니다.
+
+### Python 구현 예제
+
+1. 인터페이스/프로토콜을 정의합니다: 종속성에 필요한 동작을 지정합니다.
+
+```
+from abc import ABC, abstractmethod
+
+class Database(ABC):
+    @abstractmethod
+    def query(self, sql: str):
+        pass
+```
+
+
+2. 구체적인 클래스 구현: 종속성에 대한 구체적인 구현을 제공합니다.
+
+```
+class MySQLDatabase(Database):
+    def query(self, sql: str):
+        return f"Executing '{sql}' on MySQL"
+
+```
+
+3. 생성자를 통해 종속성 주입: 클래스 생성자를 통해 종속성을 전달합니다.
+
+```
+class Service:
+    def __init__(self, db: Database):
+        self.db = db
+
+    def get_data(self, sql: str):
+        return self.db.query(sql)
+```
+
+
+4. 종속성 어셈블리: 인스턴스를 생성하고 종속성을 주입합니다.
+
+```
+db = MySQLDatabase()
+service = Service(db)
+result = service.get_data("SELECT * FROM users")
+print(result)
+```
+
+모범 사례
+인터페이스 분리: 인터페이스를 사용하여 종속성의 예상 동작을 정의하세요.
+단일 책임: 각 클래스는 단일 책임을 가져야 합니다.
+DI 컨테이너 사용: 대규모 프로젝트에서 종속성을 관리하려면 DI 프레임워크 또는 컨테이너(예: dependency_injector 라이브러리)를 사용하는 것을 고려하세요.
+DI 라이브러리 사용
+보다 고급 종속성 관리를 위해 다음과 같은 DI 라이브러리 사용을 고려하세요. 
+
+
 
 <br>
 <br>
