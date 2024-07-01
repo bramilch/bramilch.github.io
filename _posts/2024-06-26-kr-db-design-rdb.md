@@ -2,7 +2,7 @@
 layout: post
 title: 데이터베이스 설계 - RDB 편
 author: bramilch
-date: 2024-06-26 18:00:00 +0900
+date: 2024-06-26 _posts/2024-06-14-kr-python-design-pattern.md18:00:00 +0900
 categories: [Backend, Data Engineering]
 tags: [Backend, Data Engineering]
 pin: true
