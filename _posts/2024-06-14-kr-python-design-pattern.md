@@ -16,7 +16,8 @@ mermaid: false
 
 > 2024/06/14: 초안 작성  
 > 2024/06/25: 비교 테이블 보완, 머리말의 디자인 패턴 적용, 코드 리팩토링 관련 수정  
-> 2024/06/30: 의존성 주입 패턴 추가, 
+> 2024/06/30: 의존성 주입 패턴 추가  
+> 2024/07/03: 의존성 주입 패턴, Mocking, Stubbing 보완  
 
 ※ 내용에 오류가 있을 수 있습니다.  
 ※ 내용을 계속 추가, 수정, 보완하고 있습니다.  
@@ -200,9 +201,9 @@ mermaid: false
 
 <br>
 
-- 제어의 역전 **Inversion of Control (IoC)**: 의존성을 생성하고 관리하는 제어권이 종속 클래스에서 외부 프레임워크 또는 컨테이너로 반전
+- ***제어의 역전 Inversion of Control (IoC)***: 일반적인 절차적 프로그래밍에서의 프로그램 제어 흐름의 반대라는 의미. 의존성을 생성하고 관리하는 제어권이 종속 클래스에 있는 것이 아니라, 외부의 프레임워크, 컨테이너가 프로그램을 제어함.
 
-- 의존성 주입**Dependency Injection (DI)**: 클래스에서 의존성을 생성하는 대신 의존성을 클래스에 제공하는 IoC를 구현하는 방법.
+- 의존성 주입**Dependency Injection (DI)**: 클래스에서 의존성을 생성하는 대신 의존성을 클래스에 제공하는 IoC를 구현하는 방법
 
 <br>
 
@@ -210,11 +211,11 @@ mermaid: false
 
 <br>
 
-- 생성자 주입 **Constructor Injection**: 클래스 생성자를 통해 의존성을 제공합니다.
+- 생성자 주입 **Constructor Injection**: 클래스 생성자를 통해 의존성을 제공
 
-- 세터 주입 **Setter Injection**: 세터 메서드를 통해 의존성을 제공합니다.
+- 세터 주입 **Setter Injection**: 세터 메서드를 통해 의존성을 제공
 
-- 인터페이스 주입 **Interface Injection**: 의존성은 인터페이스를 통해 제공됩니다(파이썬에서는 덜 일반적임).
+- 인터페이스 주입 **Interface Injection**: 의존성은 인터페이스를 통해 제공(이 방법은 파이썬에서잘 쓰이지 않음).
 
 <br>
 
@@ -222,9 +223,16 @@ mermaid: false
 
 <br>
 
-- 느슨한 결합 **Loose Coupling**: 클래스가 의존성에 단단히 묶여 있지 않으므로 시스템이 더 모듈화됩니다.
+- 느슨한 결합 **Loose Coupling**: 클래스가 의존성에 단단히 묶여 있지 않으므로 시스템이 더 모듈화됨.
 
-- 테스트의 용이성 **Ease of Testing**: 단위 테스트 중에 의존성을 쉽게 모킹하거나 스텁할 수 있습니다.
+- 테스트의 용이성 **Ease of Testing**: 단위 테스트 중에 의존성을 쉽게 모킹 mocked 하거나 스텁 stubbed할 수 있습니다.
+
+> 테스트에서 Mocking vs Stubbing
+> 실제가 아닌 객체에 대한 몇 가지 정의가 있습니다. 일반적인 용어는 테스트 더블(Test Double)입니다. 이 용어에는 더미(Dummy), 페이크(Fake), 스텁(Stub), 모크(Mock)이 포함됩니다.
+> 더미(Dummy) 객체는 전달되지만 실제로는 사용되지 않습니다. 일반적으로 매개변수 목록을 채우는 데 사용됩니다.
+> 페이크(fake) 개체에는 실제로 작동하는 구현이 있지만 일반적으로 생산에 적합하지 않게 만드는 몇 가지 지름길을 사용합니다(메모리 내 데이터베이스가 좋은 예입니다).
+> 스텁(Stub)은 테스트 중에 이루어진 호출에 대해 미리 준비된 답변을 제공하며 일반적으로 테스트를 위해 프로그래밍된 것 이외의 것에는 전혀 응답하지 않습니다. 스텁은 '보낸' 메시지를 기억하는 이메일 게이트웨이 스텁과 같이 호출에 대한 정보를 기록할 수도 있고 '보낸' 메시지 수만 기록할 수도 있습니다.
+> 모크(Mock)는 우리가 여기서 말하는 것입니다. 수신할 것으로 예상되는 호출의 사양을 형성하는 기대로 미리 프로그래밍된 객체
 
 - 유연성 및 재사용성 **Flexibility and Reusability**: 구성 요소는 다양한 구성과 의존성으로 재사용할 수 있습니다.
 
@@ -297,3 +305,10 @@ print(result)
 
 [GeeksforGeeks] Python Design Patterns  
 <https://www.geeksforgeeks.org/python-design-patterns/>
+
+[Wikipedia] Inversion of control  
+<https://en.wikipedia.org/wiki/Inversion_of_control>
+
+[Stack Overflow] What's the difference between a mock & stub?  
+<https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub>
+
