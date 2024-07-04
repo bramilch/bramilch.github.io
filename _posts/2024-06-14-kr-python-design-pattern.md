@@ -114,9 +114,9 @@ mermaid: false
 
 - 브릿지 Bridge: 객체의 인터페이스를 구현과 분리하여 두 가지가 독립적으로 기능하도록 함.
 
-- 컴포지트 Composite: 객체를 트리 구조로 구성하여 부분 전체 계층 구조 part-whole hierarchies를 만들고, 클라이언트가 개별 객체와 구성을 균일하게 처리할 수 있도록 함.
+- 컴포지트 Composite: 객체를 트리 구조로 구성하여 부분 전체 계층 구조 Part-whole Hierarchies를 만들고, 클라이언트가 개별 객체와 구성을 균일하게 처리할 수 있도록 함.
 
-> part-whole hierarchies란 한 레벨에서의 객체가 관련된 객체의 다음 하위 레벨도 구성하는 구조
+> Part-whole Hierarchies란 한 레벨에서의 객체가 관련된 객체의 다음 하위 레벨도 구성하는 구조
 
 - 데코레이터 Decorator: 객체에 동적으로 추가 책임 additional responsibilities을 줌.
 
@@ -225,14 +225,20 @@ mermaid: false
 
 - 느슨한 결합 **Loose Coupling**: 클래스가 의존성에 단단히 묶여 있지 않으므로 시스템이 더 모듈화됨.
 
-- 테스트의 용이성 **Ease of Testing**: 단위 테스트 중에 의존성을 쉽게 모킹 mocked 하거나 스텁 stubbed할 수 있습니다.
+- 테스트의 용이성 **Ease of Testing**: 단위 테스트 중에 의존성을 쉽게 모킹 mocked 하거나 스텁 stubbed 할 수 있음.
 
-> 테스트에서 Mocking vs Stubbing
-> 실제가 아닌 객체에 대한 몇 가지 정의가 있습니다. 일반적인 용어는 테스트 더블(Test Double)입니다. 이 용어에는 더미(Dummy), 페이크(Fake), 스텁(Stub), 모크(Mock)이 포함됩니다.
-> 더미(Dummy) 객체는 전달되지만 실제로는 사용되지 않습니다. 일반적으로 매개변수 목록을 채우는 데 사용됩니다.
-> 페이크(fake) 개체에는 실제로 작동하는 구현이 있지만 일반적으로 생산에 적합하지 않게 만드는 몇 가지 지름길을 사용합니다(메모리 내 데이터베이스가 좋은 예입니다).
-> 스텁(Stub)은 테스트 중에 이루어진 호출에 대해 미리 준비된 답변을 제공하며 일반적으로 테스트를 위해 프로그래밍된 것 이외의 것에는 전혀 응답하지 않습니다. 스텁은 '보낸' 메시지를 기억하는 이메일 게이트웨이 스텁과 같이 호출에 대한 정보를 기록할 수도 있고 '보낸' 메시지 수만 기록할 수도 있습니다.
-> 모크(Mock)는 우리가 여기서 말하는 것입니다. 수신할 것으로 예상되는 호출의 사양을 형성하는 기대로 미리 프로그래밍된 객체
+> **테스트에서 Mocking vs Stubbing**
+> - 테스트 더블(Test Double)은 소프트웨어 테스트 자동화에 사용되는 소프트웨어
+> - 테스트 더블은 소프트웨어 개발 과정에서 사용되는 테스트 방법론 중 하나, 영화를 촬영할 때 배우를 대신하여 위험한 역할을 하는 스턴트 더블 (Stunt Double)에서 유래된 단어
+> - 테스트가 프로덕션 코드에 의존할 필요가 없도록 디펜던시를 충족하는 소프트웨어 테스트 자동화에 사용되는 소프트웨어. 테스트 더블 유형으로 더미(Dummy), 페이크(Fake), 스텁(Stub), 모크(Mock), 스파이(Spy)가 있음.
+> 
+> **테스트 더블 Test doubles 유형**
+> - **모크 Mock**: 테스트 실행 전에 정의된 기대치를 통해 출력을 확인(Mock object와 다름). 수신할 것으로 예상되는 호출의 사양을 형성하는 기대로 미리 프로그래밍된 객체
+> - **스텁 Stub**: 테스트 중에 이루어진 호출에 대해 미리 준비된 답변을 제공(정적 입력 제공)하며 일반적으로 테스트를 위해 프로그래밍된 것 이외의 것에는 전혀 응답하지 않음. 스텁은 호출에 대한 정보를 기록할 수도 있고 보낸 메시지 수만 기록할 수도 있음. ex.  보낸 메시지를 기억하는 이메일 게이트웨이 스텁
+> - **더미 Dummy**: 테스트된 인터페이스에 필요하지만 테스트 사례가 종속되지 않는 값으로 테스트
+> - **페이크 Fake**: 프로덕션 버전보다 테스트에 더 적합한 상대적으로 완전한 기능을 구현한 것. ex. 데이터베이스 서버 대신 인메모리 데이터베이스로 테스트
+> - **스파이 Spy**: 테스트 실행 전 호출 출력 설정 및 테스트 실행 후 입력 매개변수 확인 지원
+
 
 - 유연성 및 재사용성 **Flexibility and Reusability**: 구성 요소는 다양한 구성과 의존성으로 재사용할 수 있습니다.
 
@@ -308,6 +314,9 @@ print(result)
 
 [Wikipedia] Inversion of control  
 <https://en.wikipedia.org/wiki/Inversion_of_control>
+
+[Wikipedia] Test double
+<https://en.wikipedia.org/wiki/Test_double>
 
 [Stack Overflow] What's the difference between a mock & stub?  
 <https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub>
