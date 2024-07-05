@@ -18,6 +18,7 @@ mermaid: false
 > 2024/06/25: 비교 테이블 보완, 머리말의 디자인 패턴 적용, 코드 리팩토링 관련 수정  
 > 2024/06/30: 의존성 주입 패턴 추가  
 > 2024/07/03: 의존성 주입 패턴, Mocking, Stubbing 보완  
+> Python DI 패턴 구현 예제, 파이썬 DI 라이브러리 *dependency_injector* 보완  
 
 ※ 내용에 오류가 있을 수 있습니다.  
 ※ 내용을 계속 추가, 수정, 보완하고 있습니다.  
@@ -36,7 +37,7 @@ mermaid: false
   - [의존성 주입 유형](#의존성-주입-유형)
   - [의존성 주입 이점](#의존성-주입-이점)
   - [Python DI 패턴 구현 예제](#python-di-패턴-구현-예제)
-- [파이썬 DI 라이브러리 ***dependency\_injector***](#파이썬-di-라이브러리-dependency_injector)
+- [파이썬 DI 라이브러리 *dependency\_injector*](#파이썬-di-라이브러리-dependency_injector)
 
 
 <br>
@@ -248,30 +249,46 @@ mermaid: false
 
 <br>
 
-1. 인터페이스/프로토콜을 정의합니다: 의존성에 필요한 동작을 지정합니다.
+
+- 인터페이스 분리 **Interface Segregation**: 인터페이스를 사용하여 의존성의 예상 동작을 정의
+
+- 단일 책임 **Single Responsibility**: 각 클래스는 단일 책임을 가져야 함.
+
+- DI 컨테이너 사용 **Use DI Containers**: 대규모 프로젝트에서 의존성을 관리하려면 DI 프레임워크 또는 컨테이너(예: ***dependency_injector 라이브러리***)를 사용하는 것이 유리
+
+> 1. 인터페이스/프로토콜을 정의하여 의존성에 필요한 동작을 지정 
+> → 2. 의존성 구체적인 구현 
+> → 3. 클래스 생성자를 통해 의존성을 전달 
+> → 4. 인스턴스를 생성하고 의존성을 주입
+
+<br> 
+
+**코드 구조**
+
+
+<br>
+
+**디렉토리 구조**
+
+<br>
 
 ```
-from abc import ABC, abstractmethod
-
-class Database(ABC):
-    @abstractmethod
-    def query(self, sql: str):
-        pass
+project/
+│
+├── service.py            # 구체적인 서비스 구현 내용
+├── database.py           # DB 인터페이스와 구현
+└── main.py               # 애플리케이션 entry point
 ```
 
+<br>
 
-2. 구체적인 클래스 구현: 의존성에 대한 구체적인 구현을 제공합니다.
+service.py
 
-```
-class MySQLDatabase(Database):
-    def query(self, sql: str):
-        return f"Executing '{sql}' on MySQL"
+<br>
 
 ```
+from database import Database
 
-3. 생성자를 통해 의존성 주입: 클래스 생성자를 통해 의존성을 전달합니다.
-
-```
 class Service:
     def __init__(self, db: Database):
         self.db = db
@@ -280,28 +297,112 @@ class Service:
         return self.db.query(sql)
 ```
 
+<br>
 
-4. 의존성 어셈블리: 인스턴스를 생성하고 의존성을 주입합니다.
-
-```
-db = MySQLDatabase()
-service = Service(db)
-result = service.get_data("SELECT * FROM users")
-print(result)
-```
-
-
-- 인터페이스 분리: 인터페이스를 사용하여 의존성의 예상 동작을 정의
-
-- 단일 책임 **Single Responsibility**: 각 클래스는 단일 책임을 가져야 함.
-
-- DI 컨테이너 사용: 대규모 프로젝트에서 의존성을 관리하려면 DI 프레임워크 또는 컨테이너(예: dependency_injector 라이브러리)를 사용하는 것이 유리
+**database.py**
 
 <br>
 
-## 파이썬 DI 라이브러리 ***dependency_injector***
+```
+from abc import ABC, abstractmethod
+
+class Database(ABC):
+    @abstractmethod
+    def query(self, sql: str):
+        pass
+
+class MySQLDatabase(Database):
+    def query(self, sql: str):
+        return f"Executing '{sql}' on MySQL"
+
+```
 
 <br>
+
+**main.py**
+
+<br>
+
+```
+from database import MySQLDatabase
+from service import Service
+
+def main():
+    db = MySQLDatabase()
+    service = Service(db)
+    result = service.get_data("SELECT * FROM users")
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```
+
+
+<br>
+
+## 파이썬 DI 라이브러리 *dependency_injector*
+<br>
+
+Dependency Injector 라이브러리 사이트  
+Dependency injection framework for Python by Roman Mogylatov  
+https://python-dependency-injector.ets-labs.org/#
+
+Dependency Injector GitHub  
+https://github.com/ets-labs/python-dependency-injector?tab=readme-ov-file
+
+<br>
+
+**Installation**
+
+<br>
+
+```
+pip install dependency-injector
+```
+
+<br>
+
+라이브러리 사용 예제
+
+<br>
+
+```
+from dependency_injector import containers, providers
+from dependency_injector.wiring import Provide, inject
+
+
+class Container(containers.DeclarativeContainer):
+
+    config = providers.Configuration()
+
+    api_client = providers.Singleton(
+        ApiClient,
+        api_key=config.api_key,
+        timeout=config.timeout,
+    )
+
+    service = providers.Factory(
+        Service,
+        api_client=api_client,
+    )
+
+
+@inject
+def main(service: Service = Provide[Container.service]) -> None:
+    ...
+
+
+if __name__ == "__main__":
+    container = Container()
+    container.config.api_key.from_env("API_KEY", required=True)
+    container.config.timeout.from_env("TIMEOUT", as_=int, default=5)
+    container.wire(modules=[__name__])
+
+    main()  # <-- dependency is injected automatically
+
+    with container.api_client.override(mock.Mock()):
+        main()  # <-- overridden dependency is injected automatically
+```
 
 
 <br>
@@ -321,3 +422,5 @@ print(result)
 [Stack Overflow] What's the difference between a mock & stub?  
 <https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub>
 
+[GitHub] python-dependency-injector  
+<https://github.com/ets-labs/python-dependency-injector?tab=readme-ov-file>
