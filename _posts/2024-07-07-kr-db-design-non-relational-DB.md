@@ -36,6 +36,8 @@ image:
 - [NoSQL DB 설계 절차](#nosql-db-설계-절차)
   - [NoSQL DB 설계 시 고려 요소](#nosql-db-설계-시-고려-요소)
   - [NoSQL DB 설계 시 주의 사항](#nosql-db-설계-시-주의-사항)
+- [RDB, NoSQL DB 통합하기](#rdb-nosql-db-통합하기)
+- [Polyglot Persistence 다양한 언어, 도구 지속성](#polyglot-persistence-다양한-언어-도구-지속성)
 
 
 <br>
