@@ -578,6 +578,8 @@ CREATE TABLE Products (
 
 <br>
 
+[데이터 관련 직무 총정리(DA, DE, DS, DBA, DA)](https://bramilch.github.io/posts/kr-data-jobs-comparing/) 참고
+
 - 데이터베이스 엔지니어
 
 - 데이터베이스 관리자 (DBA)
