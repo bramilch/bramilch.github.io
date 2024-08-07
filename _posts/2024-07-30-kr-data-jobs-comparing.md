@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 데이터 관련 직무 총정리(DA, DE, DS, DBA, DA )
+title: 데이터 관련 직무 총정리(DA, DE, DS, DBA, DA)
 author: bramilch
 date: 2024-05-22 18:00:00 +0900
 categories: [Backend, Data Engineering]
@@ -10,8 +10,6 @@ math: false
 toc: true
 comments: false
 mermaid: false
-image:
-  path: ./assets/img/posts/2024-05-01-memory-types-differences/dram_Inside.png
 ---
 
 <br>
