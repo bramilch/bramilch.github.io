@@ -129,10 +129,3 @@ mermaid: false
 [YouTube] 데이터, AI 커리어 + 최신 데이터 전과정 공부순서 완벽 가이드 (혼자서도 익힐 수 있는 데이터 분석가, 데이터 과학자도 가능한 최신 데이터 분석/과학 로드맵)  
 <https://www.youtube.com/watch?v=vsoAyh4D-zw>, 잔재미코딩(DaveLee), 2024년 1월 10일
  
-[참고자료]
-
-[DATA ON-AIR]성공적인 NoSQL 도입을 위한 키포인트 : NoSQL 데이터 모델링    
-<https://dataonair.or.kr/db-tech-reference/d-lounge/technical-data/?mod=document&uid=236123>
-
-[MongoDB] NOSQL 데이터 모델링 기법 살펴보기  
-<https://velog.io/@hwaya2828/MongoDB-NOSQL-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EA%B8%B0%EB%B2%95-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0>
