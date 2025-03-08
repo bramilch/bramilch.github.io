@@ -158,8 +158,8 @@ mermaid: false
 
 ## 2. 파이썬 가상환경 도구 비교
 
-| 기능/도구 | venv | virtualenv | virtualenvwrapper | pyenv | conda | poetry|
-|----------|------|------------|------------------|------|------|--------|
+| 기능/도구 | venv | virtualenv | virtualenvwrapper | pyenv | conda | poetry |
+|---|---|---|---|---|---|---|
 | **기본 기능** | 가상환경 생성을 위한 핵심 파이썬 모듈 | 격리된 환경 생성을 위한 서드파티 라이브러리 | 보다 쉬운 관리를 위한 virtualenv 확장 | 여러 파이썬 버전과 가상환경 관리 | 환경 및 패키지 관리와 여러 언어 지원 | 프로젝트 종속성 및 가상환경 관리 |
 | **설치** | 기본 제공(Python 3.3 이상) | pip를 통한 설치 필요 | pip를 통한 설치 필요 | 설치 및 설정 필요 | 설치 필요, 일반적으로 Anaconda 필요 | pip를 통한 설치 필요 |
 | **Python 버전 관리** | 불가능 | pyenv 통합을 통해 제한적 | pyenv 통합을 통해 제한적 | 가능 | 가능 | 불가능 |
@@ -178,6 +178,7 @@ mermaid: false
 | **환경 재현성** | 'requirements.txt' 의존 | 'requirements.txt' 의존 | 'requirements.txt' 의존 | 'requirements.txt' 의존 | 'environment.yml' 사용 | 'pyproject.toml' 및 'poetry.lock' 사용 |
 | **시스템 파이썬과 함께 사용** | 사용 | 사용 | 사용 | 사용 | 사용하지 않음(별도 환경 필요) | 사용 |
 | **파이썬이 아닌 패키지 지원** | 지원하지 않음 | 지원하지 않음 | 지원하지 않음 | 지원하지 않음 | 지원함 | 지원하지 않음 |
+
 *다국어 지원(Cross-Language Support)이란 non-Python dependencies도 관리할 수 있게 지원
 
 - 파이썬 가상환경은 다양한 도구와 방법을 사용하여 만들 수 있으며, 각각 고유한 기능, 이점 및 사용 사례가 있음.
@@ -185,7 +186,7 @@ mermaid: false
 
 - 각 도구는 고유한 강점을 가지고 있으며 다양한 사용 사례에 적합. 적합한 도구를 선택하는 것은 특정 요구 사항, 워크플로, 프로젝트의 복잡성에 따라 달라짐.
 
-<span style="font-size:150%"><u>어쨌든 적합한 도구를 선택해야</u></span> 
+<span style="font-size:150%"><u>어쨌든 상황에 맞는 적합한 도구를 선택해야</u></span> 
 
 - 간단한 프로젝트의 경우: 기본적인 격리가 필요한 **소규모 프로젝트에는 venv로 충분**
 - 고급 Python 프로젝트의 경우: **VM 또는 pyenv는 복잡한 설정을 위한 더 많은 기능을 제공**
@@ -200,7 +201,7 @@ mermaid: false
 	- poetry: ***환경 관리, 종속성 해결, 패키징을 단일 도구로 통합***
   
 
-1. ***venv***
+***venv***
 
 - 격리된 Python 환경을 만들기 위해 Python 3.3 이상에 포함된 경량 도구
 - 사용법: 최소한의 설정으로 기본적인 환경 관리에 적합합니다.
@@ -214,7 +215,7 @@ mermaid: false
 - 종속성 관리: pip를 사용하여 관리
 
 
-2. ***virtualenv***
+***virtualenv***
 
 - 오래되고 널리 사용되는 도구로, 추가 기능으로 venv를 확장
 - 사용 방법: venv보다 더 강력하며 이전 Python 버전을 지원
