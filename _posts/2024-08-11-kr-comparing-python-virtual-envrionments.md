@@ -158,7 +158,7 @@ mermaid: false
 
 ## 2. 파이썬 가상환경 도구 비교
 
-| 기능/도구 | venv | virtualenv | virtualenvwrapper | pyenv | conda | poetry |
+| 기능/도구 | venv | virtualenv | virtualenvwrapper | pyenv | conda | poetry|
 |----------|------|------------|------------------|------|------|--------|
 | **기본 기능** | 가상환경 생성을 위한 핵심 파이썬 모듈 | 격리된 환경 생성을 위한 서드파티 라이브러리 | 보다 쉬운 관리를 위한 virtualenv 확장 | 여러 파이썬 버전과 가상환경 관리 | 환경 및 패키지 관리와 여러 언어 지원 | 프로젝트 종속성 및 가상환경 관리 |
 | **설치** | 기본 제공(Python 3.3 이상) | pip를 통한 설치 필요 | pip를 통한 설치 필요 | 설치 및 설정 필요 | 설치 필요, 일반적으로 Anaconda 필요 | pip를 통한 설치 필요 |
