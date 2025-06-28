@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 웹 프레임워크 종류, 비교와 선택
+title: Types of web frameworks, comparing and choosing
 author: bramilch
 date: 2025-06-29 18:00:00 +0900
 categories: [Backend, Data Engineering]
@@ -31,18 +31,17 @@ I am constantly adding, modifying, and supplementing the content.
 
 <br>
 
-**목차**
-
-- [머리말](#머리말)
-- [스프링 Spring, 장고 Django, 플라스크 Flask 비교](#스프링-spring-장고-django-플라스크-flask-비교)
-- [웹 프레임워크 선택의 문제](#웹-프레임워크-선택의-문제)
-- [프론트엔드 웹 프레임워크 Front-End Web Frameworks](#프론트엔드-웹-프레임워크-front-end-web-frameworks)
-- [백엔드 웹 프레임워크 Back-End Web Frameworks](#백엔드-웹-프레임워크-back-end-web-frameworks)
-- [풀스택 웹 프레임워크 Full-Stack Web Frameworks](#풀스택-웹-프레임워크-full-stack-web-frameworks)
-- [Spring과 Spring Boot 비교와 선택](#spring과-spring-boot-비교와-선택)
-	- [Spring 프레임워크](#spring-프레임워크)
-	- [Spring Boot 프레임워크](#spring-boot-프레임워크)
-- [구체적인 웹 개발 프레임워크들의 장단점](#구체적인-웹-개발-프레임워크들의-장단점)
+**Table of Contents**
+- [Preface](#preface)
+- [Spring, Django, and Flask comparison](#spring-django-and-flask-comparison)
+- [The problem with choosing a web framework](#the-problem-with-choosing-a-web-framework)
+- [Front-End Web Frameworks](#front-end-web-frameworks)
+- [Back-End Web Frameworks](#back-end-web-frameworks)
+- [Full-Stack Web Frameworks](#full-stack-web-frameworks)
+- [Comparing and choosing between Spring and Spring Boot](#comparing-and-choosing-between-spring-and-spring-boot)
+	- [Spring Framework](#spring-framework)
+	- [Spring Boot Framework](#spring-boot-framework)
+- [Pros and cons of specific web development frameworks](#pros-and-cons-of-specific-web-development-frameworks)
 	- [1. Django (Python)](#1-django-python)
 	- [2. Flask (Python)](#2-flask-python)
 	- [3. Spring (Java)](#3-spring-java)
@@ -53,7 +52,8 @@ I am constantly adding, modifying, and supplementing the content.
 	- [8. Vue.js/Nuxt.js (JavaScript)](#8-vuejsnuxtjs-javascript)
 	- [9. React.js/Next.js (JavaScript)](#9-reactjsnextjs-javascript)
 	- [10. Angular (JavaScript/TypeScript)](#10-angular-javascripttypescript)
-- [참고자료](#참고자료)
+- [References](#references)
+
 
 <br>
 
@@ -549,7 +549,7 @@ from Google Dictionary
 
 
 
-## 참고자료
+## References
 
 [문화체육관광부] 국립장애인도서관 (웹 및 모바일) 접근성  National Library of Disability (web and mobile) accessibility
 <https://www.nld.go.kr/ableFront/new_standard_guide/accessibility.jsp>
