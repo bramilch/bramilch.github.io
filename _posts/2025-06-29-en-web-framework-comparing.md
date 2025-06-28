@@ -11,7 +11,7 @@ toc: true
 comments: false
 mermaid: false
 image:
-  path: ./assets/img/posts/2024-05-21-kr-web-framework-comparing/web-frameworks-imagesjpg.jpg
+  path:
 ---
 
 <br>
