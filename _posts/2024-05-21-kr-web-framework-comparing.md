@@ -231,7 +231,7 @@ from Google Dictionary
 <center><span style="font-size:1.2em;">Spring vs Spring Boot</span></center>
 
 |특징|스프링 프레임워크|스프링 부트|
-|-------------|-----------------|---|---------------|
+|-------------|-----------------|---|
 |목적| 엔터프라이즈 애플리케이션을 위한 포괄적인 프레임워크|Spring을 통한 신속한 애플리케이션|
 |개발|복잡성 높음, 광범위한 구성 필요|낮음, 자동 구성 및 합리적인 기본값으로 낮음|
 |구성| XML, Java 어노테이션, Java 구성|규칙을 통한 구성, 최소한의 설정|
@@ -333,7 +333,7 @@ from Google Dictionary
 <br>
 
 |주요 사용 언어|프레임워크 이름|설명|
-|---|---|---|---|
+|---|---|---|
 |**JavaScript**|React|사용자 인터페이스, 특히 단일 페이지 애플리케이션을 구축하기 위한 자바스크립트 리액트 라이브러리|
 ||Angular|웹 애플리케이션 구축을 위한 Full-fledged framework|
 ||Vue.js|사용자 인터페이스 구축을 위한 Progressive framework|

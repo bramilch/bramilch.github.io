@@ -23,7 +23,7 @@ timezone: Asia/Seoul
 
 title: bramilch # the main title
 
-tagline: Data Engineering and Science # it will display as the sub-title
+tagline: Data Engineering & Science, Backend & Frontend Engineering # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Technical writing for Data Science, AI, Business Analytics & Intelligence, Computer Science, Mathematics, Statistics
@@ -49,7 +49,7 @@ social:
     - https://github.com/bramilch # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/jamespark408769
 
 google_site_verification: google49fff5cbb5681660.html # fill in to your verification string
 
