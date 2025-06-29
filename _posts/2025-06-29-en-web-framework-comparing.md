@@ -14,13 +14,13 @@ mermaid: false
 
 <br>
 
-> 2024/05/21: Drafted 
-> 2024/05/23: Added web frameworks table for each language 
-> 2024/05/24: Added Spring, Django, Flask comparison 
-> 2024/05/26: Added web framework selection criteria, pros and cons of specific web frameworks, improved 
-> 2024/05/27: Added Spring vs. Spring Boot comparison 
-> 2024/05/28: Corrected Spring vs. Spring Boot sentences, improved 
-> 2024/05/29: Added Spring vs. Spring Boot features
+> 2024/05/21: Drafted  
+> 2024/05/23: Added web frameworks table for each language   
+> 2024/05/24: Added Spring, Django, Flask comparison   
+> 2024/05/26: Added web framework selection criteria, pros and cons of specific web frameworks, improved   
+> 2024/05/27: Added Spring vs. Spring Boot comparison   
+> 2024/05/28: Corrected Spring vs. Spring Boot sentences, improved   
+> 2024/05/29: Added Spring vs. Spring Boot features  
 
  <br>
  
