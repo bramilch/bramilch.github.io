@@ -10,8 +10,6 @@ math: false
 toc: true
 comments: false
 mermaid: false
-image:
-  path:
 ---
 
 <br>
